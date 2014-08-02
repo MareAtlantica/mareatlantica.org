@@ -1,0 +1,2 @@
+19-07-2014 16:22:16 - FATAL - 58,6 MB - Duplicate entry 'mclourenzo60@hotmail.com' for key 'email'
+28-07-2014 18:18:52 - FATAL - 73,6 MB - Duplicate entry 'ofunambulista@gmail.com' for key 'email'

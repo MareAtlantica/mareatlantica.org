@@ -1,0 +1,308 @@
+# Translation of Twenty Twelve in Galician
+# This file is distributed under the same license as the Twenty Twelve package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2013-07-25 23:38:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Twenty Twelve\n"
+
+msgid "http://wordpress.org/themes/twentytwelve"
+msgstr "http://wordpress.org/themes/twentytwelve"
+
+#: functions.php:349
+msgid "Reply"
+msgstr "Responder"
+
+#: image.php:26
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>."
+msgstr "<span class=\"meta-prep meta-prep-entry-date\">Publicado </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> as <a href=\"%3$s\" title=\"Ligazón á imaxe a tamaño completo\">%4$s &times; %5$s</a> en <a href=\"%6$s\" title=\"Volver a %7$s\" rel=\"gallery\">%8$s</a>."
+
+msgid "The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background."
+msgstr "O tema 2012 para WordPress é un tema totalmente adaptable que se ve xenial en calquera dispositivo. Entre as súas características encontrarás un modelo de páxina principal cos seus propios widgets, unha fonte opcional, estilos para formatos de entrada tanto en portada como en entradas, e un modelo de páxina opcional sen barra lateral. Pono ao teu gusto cun menú personalizado, unha imaxe de cabeceira ou un fondo."
+
+#: functions.php:101
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:107
+msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#: functions.php:244
+msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
+msgstr "Aparece en artigos e páxinas agás no modelo opcional de páxina principal, que ten os seus propios widgets"
+
+#: functions.php:252
+msgid "First Front Page Widget Area"
+msgstr "Primeira área de widgets da páxina principal"
+
+#: functions.php:254 functions.php:264
+msgid "Appears when using the optional Front Page template with a page set as Static Front Page"
+msgstr "Aparece ao usar o modelo opcional de páxina principal cunha páxina establecida como páxina principal estática"
+
+#: functions.php:262
+msgid "Second Front Page Widget Area"
+msgstr "Segunda área de widgets da páxina principal"
+
+#: functions.php:390
+msgid "This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Esta entrada publicouse en %1$s e está etiquetada con %2$s en %3$s<span class=\"by-author\"> por %4$s</span>."
+
+#: functions.php:392
+msgid "This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Esta entrada publicouse en %1$s o %3$s<span class=\"by-author\"> por %4$s</span>."
+
+#: functions.php:394
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Esta entrada publicouse o %3$s<span class=\"by-author\"> por %4$s</span>."
+
+#: single.php:21
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: single.php:22
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+msgid "Front Page Template"
+msgstr "Modelo de páxina de portada"
+
+msgid "Full-width Page Template, No Sidebar"
+msgstr "Modelo de ancho completo, sen barra lateral"
+
+#: content.php:16
+msgid "Featured post"
+msgstr "Artigo destacado"
+
+#: functions.php:213
+msgid "Page %s"
+msgstr "Páxina %s"
+
+#: content-link.php:12
+msgid "Link"
+msgstr "Ligazón"
+
+#: content-aside.php:23 content-image.php:23 content-link.php:21
+#: content-quote.php:20 content-status.php:37 content.php:33
+msgid "% Replies"
+msgstr "% Respostas"
+
+#: content-aside.php:23 content-image.php:23 content-link.php:21
+#: content-quote.php:20 content-status.php:37 content.php:33
+msgid "1 Reply"
+msgstr "1 Resposta"
+
+#: 404.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que non atopamos o que estás tentando localizar. É posible que a busca poida axudar."
+
+#: content-none.php:17 index.php:53
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr "Desculpa, pero non se atoparon resultados. É posible que a busca poida axudar para atopar un artigo relacionado."
+
+#: functions.php:328
+msgid "Post author"
+msgstr "Autor do artigo"
+
+#: functions.php:313
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: header.php:43
+msgid "Menu"
+msgstr "Menú"
+
+#: header.php:44
+msgid "Skip to content"
+msgstr "Saltar ao contido"
+
+#: index.php:38
+msgid "No posts to display"
+msgstr "Sen artigos que amosar"
+
+#: index.php:42
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "Xa podes publicar o teu primeiro artigo? <a href=\"%s\">Comeza aquí</a>."
+
+#: functions.php:384
+msgid "View all posts by %s"
+msgstr "Ver todas as entradas de %s"
+
+#: image.php:41
+msgid "&larr; Previous"
+msgstr "&larr; Anterior"
+
+#: image.php:42
+msgid "Next &rarr;"
+msgstr "Seguinte &rarr;"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Resultados da busca para: %s"
+
+#: search.php:38
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Sentímoscho, pero nada coincide co teu criterio de busca. Por favor, proba de novo con diferentes palabras clave."
+
+#: archive.php:35
+msgid "Archives"
+msgstr "Arquivos"
+
+msgid "Twenty Twelve"
+msgstr "Twenty Twelve"
+
+msgid "the WordPress team"
+msgstr "o equipo de WordPress"
+
+#: functions.php:340
+msgid "Your comment is awaiting moderation."
+msgstr "O teu comentario está pendente de moderación."
+
+#: functions.php:334
+msgid "%1$s at %2$s"
+msgstr "%1$s ás %2$s"
+
+#: content-aside.php:20 content-link.php:18 content-quote.php:17
+#: content-status.php:15
+msgid "Permalink to %s"
+msgstr "Ligazón permanente a %s"
+
+#: functions.php:242
+msgid "Main Sidebar"
+msgstr "Barra lateral principal"
+
+#: functions.php:286 single.php:20
+msgid "Post navigation"
+msgstr "Navegación de artigos"
+
+#: functions.php:287
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Entradas máis antigas"
+
+#: functions.php:288
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Entradas máis recentes <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:313
+msgid "Pingback:"
+msgstr "Pingback: "
+
+#: functions.php:64
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+#: footer.php:16
+msgid "Proudly powered by %s"
+msgstr "Fornecido con orgullo por %s"
+
+#: content-aside.php:26 content-image.php:26 content-link.php:24
+#: content-page.php:24 content-quote.php:23 content-status.php:40
+#: content.php:51 functions.php:345 image.php:37
+msgid "Edit"
+msgstr "Editar"
+
+#: comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr "Comentarios máis recentes &rarr;"
+
+#: comments.php:53
+msgid "Comments are closed."
+msgstr "Os comentarios están pechados."
+
+#: author.php:63 content.php:62
+msgid "About %s"
+msgstr "Acerca de %s"
+
+#: comments.php:31
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Unha reflexión sobre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s reflexións sobre &ldquo;%2$s&rdquo;"
+
+#: archive.php:31
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:33
+msgid "Yearly Archives: %s"
+msgstr "Arquivos anuais: %s"
+
+#: archive.php:33
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: tag.php:21
+msgid "Tag Archives: %s"
+msgstr "Arquivos da etiqueta: %s"
+
+#: category.php:21
+msgid "Category Archives: %s"
+msgstr "Arquivo da categoría: %s"
+
+#: archive.php:29
+msgid "Daily Archives: %s"
+msgstr "Arquivos diarios: %s"
+
+#: archive.php:31
+msgid "Monthly Archives: %s"
+msgstr "Arquivos mensuais: %s"
+
+#: content-aside.php:15 content-image.php:13 content-link.php:14
+#: content-quote.php:13 content-status.php:31 content.php:44
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Seguir lendo <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-aside.php:23 content-image.php:23 content-link.php:21
+#: content-quote.php:20 content-status.php:37 content.php:33
+msgid "Leave a reply"
+msgstr "Deixa unha resposta"
+
+#: footer.php:16
+msgid "http://wordpress.org/"
+msgstr "http://gl.wordpress.org/"
+
+#: footer.php:16
+msgid "Semantic Personal Publishing Platform"
+msgstr "Plataforma de publicación semántica persoal"
+
+#: content-none.php:13 index.php:49 search.php:34
+msgid "Nothing Found"
+msgstr "Non se atopou nada"
+
+#: author.php:32
+msgid "Author Archives: %s"
+msgstr "Arquivos do autor: %s"
+
+#: comments.php:42
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+#: comments.php:43
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentarios máis antigos"
+
+#: functions.php:370 functions.php:373
+msgid ", "
+msgstr ", "
+
+#: content-page.php:21 content.php:45 image.php:102
+msgid "Pages:"
+msgstr "Páxinas:"
+
+#: content.php:66
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Ver todas as entradas de %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: 404.php:17
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Isto é un pouco embarazoso, non é?"

@@ -1,0 +1,12 @@
+* Consider the custom taxonomies
+
+function categories_group($name, $show_mode = false, $taxonomy = ‘category’, $top_level = false) {
+
+$categories = get_categories( array( ‘taxonomy’ => $taxonomy, ‘hide_empty’ => 0 , ‘parent’ => (($top_level) ? 0 : ”) ) );
+
+I need to filter for custom taxonomy. Mayby passing the args would do best and keep flexibility.
+
+function categories_group($name, $show_mode = false, $cat_args = ”) {
+
+$categories = get_categories( $args );
+

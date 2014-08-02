@@ -1,0 +1,149 @@
+0000.000 (0) Opened log file at time: Sat, 02 Aug 2014 09:53:37 +0000 on http://mareatlantica.org
+0000.013 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.1 PHP: 5.3.3-7+squeeze19 (Linux saramaganta 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64) MySQL: 5.1.73-1-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 60.1M | 60.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y W3TC/ObjectCache: N
+0000.015 (0) Free space on disk containing Updraft's temporary directory: 848548.6 Mb
+0000.062 (0) Tasks: Backup files:  (schedule: weekly) Backup DB: 1 (schedule: twicedaily)
+0000.063 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.513 (0) Requesting semaphore lock (d)
+0000.515 (0) Set semaphore last lock (d) time to 2014-08-02 09:53:37
+0000.515 (0) Semaphore lock (d) complete
+0000.519 (0) Backup run: resumption=0, nonce=87c0e5782c30, begun at=1406973217 (0s ago), job type=backup
+0000.520 (0) Scheduling a resumption (1) after 300 seconds (1406973517) in case this run gets aborted
+0000.536 (0) This backup run is not intended for files - skipping
+0000.537 (0) Beginning creation of database dump (WordPress DB)
+0000.581 (0) Table wp_options: Total expected rows (approximate): 393
+0000.604 (0) Table wp_options: Total rows added: 392 in 0.02 seconds
+0000.605 (0) Table wp_options: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_options.table.gz - 98.5 Kb)
+0000.610 (0) Table wp_users: Total expected rows (approximate): 7
+0000.612 (0) Table wp_users: Total rows added: 7 in 0.00 seconds
+0000.612 (0) Table wp_users: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_users.table.gz - 0.9 Kb)
+0000.615 (0) Table wp_usermeta: Total expected rows (approximate): 163
+0000.620 (0) Table wp_usermeta: Total rows added: 163 in 0.00 seconds
+0000.621 (0) Table wp_usermeta: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_usermeta.table.gz - 2.3 Kb)
+0000.624 (0) Table wp_commentmeta: Total expected rows (approximate): 148
+0000.683 (0) Table wp_commentmeta: Total rows added: 148 in 0.06 seconds
+0000.685 (0) Table wp_commentmeta: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_commentmeta.table.gz - 11.2 Kb)
+0000.688 (0) Table wp_comments: Total expected rows (approximate): 41
+0000.693 (0) Table wp_comments: Total rows added: 41 in 0.00 seconds
+0000.695 (0) Table wp_comments: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_comments.table.gz - 8.9 Kb)
+0000.698 (0) Table wp_links: Total expected rows (approximate): 0
+0000.699 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0000.700 (0) Table wp_links: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_links.table.gz - 0.4 Kb)
+0000.703 (0) Table wp_postmeta: Total expected rows (approximate): 288
+0000.710 (0) Table wp_postmeta: Total rows added: 288 in 0.01 seconds
+0000.711 (0) Table wp_postmeta: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_postmeta.table.gz - 7.7 Kb)
+0000.714 (0) Table wp_posts: Total expected rows (approximate): 250
+0000.922 (0) Table wp_posts: Total rows added: 250 in 0.21 seconds
+0000.924 (0) Table wp_posts: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_posts.table.gz - 180.6 Kb)
+0000.928 (0) Table wp_signups: Total expected rows (approximate): 0
+0000.930 (0) Table wp_signups: Total rows added: 0 in 0.00 seconds
+0000.931 (0) Table wp_signups: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_signups.table.gz - 0.4 Kb)
+0000.934 (0) Table wp_term_relationships: Total expected rows (approximate): 25
+0000.936 (0) Table wp_term_relationships: Total rows added: 25 in 0.00 seconds
+0000.937 (0) Table wp_term_relationships: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_term_relationships.table.gz - 0.4 Kb)
+0000.940 (0) Table wp_term_taxonomy: Total expected rows (approximate): 11
+0000.942 (0) Table wp_term_taxonomy: Total rows added: 11 in 0.00 seconds
+0000.944 (0) Table wp_term_taxonomy: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_term_taxonomy.table.gz - 0.5 Kb)
+0000.947 (0) Table wp_terms: Total expected rows (approximate): 11
+0000.949 (0) Table wp_terms: Total rows added: 11 in 0.00 seconds
+0000.950 (0) Table wp_terms: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_terms.table.gz - 0.6 Kb)
+0000.954 (0) Table wp_bp_activity: Total expected rows (approximate): 36
+0000.973 (0) Table wp_bp_activity: Total rows added: 36 in 0.02 seconds
+0000.975 (0) Table wp_bp_activity: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_activity.table.gz - 2.5 Kb)
+0000.978 (0) Table wp_bp_activity_meta: Total expected rows (approximate): 56
+0001.045 (0) Table wp_bp_activity_meta: Total rows added: 56 in 0.07 seconds
+0001.046 (0) Table wp_bp_activity_meta: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_activity_meta.table.gz - 6 Kb)
+0001.049 (0) Table wp_bp_groups: Total expected rows (approximate): 3
+0001.062 (0) Table wp_bp_groups: Total rows added: 3 in 0.01 seconds
+0001.063 (0) Table wp_bp_groups: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_groups.table.gz - 0.6 Kb)
+0001.067 (0) Table wp_bp_groups_groupmeta: Total expected rows (approximate): 11
+0001.079 (0) Table wp_bp_groups_groupmeta: Total rows added: 11 in 0.01 seconds
+0001.081 (0) Table wp_bp_groups_groupmeta: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_groups_groupmeta.table.gz - 0.5 Kb)
+0001.084 (0) Table wp_bp_groups_members: Total expected rows (approximate): 6
+0001.104 (0) Table wp_bp_groups_members: Total rows added: 6 in 0.02 seconds
+0001.106 (0) Table wp_bp_groups_members: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_groups_members.table.gz - 0.5 Kb)
+0001.109 (0) Table wp_bp_notifications: Total expected rows (approximate): 5
+0001.111 (0) Table wp_bp_notifications: Total rows added: 5 in 0.00 seconds
+0001.112 (0) Table wp_bp_notifications: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_notifications.table.gz - 0.5 Kb)
+0001.114 (0) Table wp_bp_xprofile_data: Total expected rows (approximate): 7
+0001.116 (0) Table wp_bp_xprofile_data: Total rows added: 7 in 0.00 seconds
+0001.117 (0) Table wp_bp_xprofile_data: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_data.table.gz - 0.6 Kb)
+0001.120 (0) Table wp_bp_xprofile_fields: Total expected rows (approximate): 1
+0001.131 (0) Table wp_bp_xprofile_fields: Total rows added: 1 in 0.01 seconds
+0001.132 (0) Table wp_bp_xprofile_fields: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_fields.table.gz - 0.5 Kb)
+0001.135 (0) Table wp_bp_xprofile_groups: Total expected rows (approximate): 1
+0001.149 (0) Table wp_bp_xprofile_groups: Total rows added: 1 in 0.01 seconds
+0001.150 (0) Table wp_bp_xprofile_groups: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_groups.table.gz - 0.4 Kb)
+0001.154 (0) Table wp_bp_xprofile_meta: Total expected rows (approximate): 0
+0001.155 (0) Table wp_bp_xprofile_meta: Total rows added: 0 in 0.00 seconds
+0001.156 (0) Table wp_bp_xprofile_meta: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_meta.table.gz - 0.3 Kb)
+0001.159 (0) Table wp_cf7dbplugin_submits: Total expected rows (approximate): 8921
+0001.436 (0) Table wp_cf7dbplugin_submits: Total rows added: 8921 in 0.28 seconds
+0001.438 (0) Table wp_cf7dbplugin_submits: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_cf7dbplugin_submits.table.gz - 97.7 Kb)
+0001.442 (0) Table wp_newsletter: Total expected rows (approximate): 845
+0001.583 (0) Table wp_newsletter: Total rows added: 845 in 0.14 seconds
+0001.585 (0) Table wp_newsletter: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_newsletter.table.gz - 31.3 Kb)
+0001.589 (0) Table wp_newsletter_emails: Total expected rows (approximate): 3
+0001.591 (0) Table wp_newsletter_emails: Total rows added: 3 in 0.00 seconds
+0001.593 (0) Table wp_newsletter_emails: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_newsletter_emails.table.gz - 3 Kb)
+0001.596 (0) Table wp_newsletter_stats: Total expected rows (approximate): 1412
+0001.740 (0) Table wp_newsletter_stats: Total rows added: 1412 in 0.14 seconds
+0001.741 (0) Table wp_newsletter_stats: finishing file (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_newsletter_stats.table.gz - 17.5 Kb)
+0001.745 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_options.table.gz (1/26): adding to final database dump
+0001.761 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_users.table.gz (2/26): adding to final database dump
+0001.762 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_usermeta.table.gz (3/26): adding to final database dump
+0001.764 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_commentmeta.table.gz (4/26): adding to final database dump
+0001.767 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_comments.table.gz (5/26): adding to final database dump
+0001.769 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_links.table.gz (6/26): adding to final database dump
+0001.770 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_postmeta.table.gz (7/26): adding to final database dump
+0001.773 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_posts.table.gz (8/26): adding to final database dump
+0001.811 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_signups.table.gz (9/26): adding to final database dump
+0001.813 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_term_relationships.table.gz (10/26): adding to final database dump
+0001.814 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_term_taxonomy.table.gz (11/26): adding to final database dump
+0001.815 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_terms.table.gz (12/26): adding to final database dump
+0001.817 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_activity.table.gz (13/26): adding to final database dump
+0001.818 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_activity_meta.table.gz (14/26): adding to final database dump
+0001.820 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_groups.table.gz (15/26): adding to final database dump
+0001.822 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_groups_groupmeta.table.gz (16/26): adding to final database dump
+0001.823 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_groups_members.table.gz (17/26): adding to final database dump
+0001.824 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_notifications.table.gz (18/26): adding to final database dump
+0001.825 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_data.table.gz (19/26): adding to final database dump
+0001.826 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_fields.table.gz (20/26): adding to final database dump
+0001.827 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_groups.table.gz (21/26): adding to final database dump
+0001.828 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_bp_xprofile_meta.table.gz (22/26): adding to final database dump
+0001.829 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_cf7dbplugin_submits.table.gz (23/26): adding to final database dump
+0001.862 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_newsletter.table.gz (24/26): adding to final database dump
+0001.869 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_newsletter_emails.table.gz (25/26): adding to final database dump
+0001.871 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db-table-wp_newsletter_stats.table.gz (26/26): adding to final database dump
+0001.879 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db.gz: finished writing out complete database file (432 Kb)
+0001.884 (0) Total database tables backed up: 26 (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db.gz, size: 476688, checksum (SHA1): ab4a1446039c7b26fd94bf6d2e6a9c71faffd415)
+0001.886 (0) Saving backup history
+0001.890 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db.gz: db: This file has not yet been successfully uploaded: will queue
+0001.892 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0001.894 (0) Cloud backup selection: email
+0001.895 (0) Beginning dispatch of backup to remote (email)
+0001.895 (0) backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db.gz: email to: dalar...
+0002.090 (0) Recording as successfully uploaded: backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db.gz (5096e9692c1a82f5773cd35d878e335d)
+0002.097 (0) Deleting local file: backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db.gz: OK
+0002.100 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0002.101 (0) Number of backup sets in history: 4
+0002.102 (0) Examining backup set with datestamp: 1406973217 (Aug 02 2014 09:53:37)
+0002.103 (0) 1406973217: db: this set includes a database (backup_2014-08-02-1153_MAREA_ATLNTICA_87c0e5782c30-db.gz); db count is now 1
+0002.104 (0) 1406973217: this backup set remains non-empty (0/1); will retain in history
+0002.105 (0) Examining backup set with datestamp: 1406929671 (Aug 01 2014 21:47:51)
+0002.105 (0) 1406929671: db: this set includes a database (backup_2014-08-01-2347_MAREA_ATLNTICA_b209ad199e69-db.gz); db count is now 2
+0002.107 (0) 1406929671: this backup set remains non-empty (0/1); will retain in history
+0002.107 (0) Examining backup set with datestamp: 1406886474 (Aug 01 2014 09:47:54)
+0002.108 (0) 1406886474: db: this set includes a database (backup_2014-08-01-1147_MAREA_ATLNTICA_243fdde2b969-db.gz); db count is now 3
+0002.108 (0) 1406886474: db: over retain limit (2); will delete this database
+0002.109 (0) Delete file: backup_2014-08-01-1147_MAREA_ATLNTICA_243fdde2b969-db.gz, service=email
+0002.110 (0) 1406886474: this backup set is now empty; will remove from history
+0002.111 (0) 1406886474: deleting log file (log.243fdde2b969.txt)
+0002.112 (0) Examining backup set with datestamp: 1406713702 (Jul 30 2014 09:48:22)
+0002.113 (0) 1406713702: this backup set remains non-empty (1/0); will retain in history
+0002.113 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0002.115 (0) Resume backup (87c0e5782c30, 0): finish run
+0002.116 (0) Decremented the semaphore (d) by 1
+0002.117 (0) Semaphore (d) unlocked
+0002.117 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.119 (0) No email will/can be sent - the user has not configured an email address.
+0002.120 (0) The backup apparently succeeded and is now complete
