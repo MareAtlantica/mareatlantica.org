@@ -1,0 +1,130 @@
+# Copyright (C) 2013 Add Actions And Filters
+# This file is distributed under the same license as the Add Actions And Filters package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Add Actions And Filters 0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/add-actions-and-filters\n"
+"POT-Creation-Date: 2013-05-06 22:26:25+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: AddActionsAndFilters_OptionsManager.php:266
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:284
+msgid "System Settings"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:286
+msgid "System"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:287
+msgid "PHP Version"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:292
+msgid ""
+"(WARNING: This plugin may not work properly with versions earlier than PHP "
+"5.2)"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:298
+msgid "MySQL Version"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:303
+msgid ""
+"(WARNING: This plugin may not work properly with versions earlier than MySQL "
+"5.0)"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:311
+msgid "Settings"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:334
+msgid "Save Changes"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:392
+msgid "true"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:394
+msgid "false"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:397
+msgid "Administrator"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:399
+msgid "Editor"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:401
+msgid "Author"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:403
+msgid "Contributor"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:405
+msgid "Subscriber"
+msgstr ""
+
+#: AddActionsAndFilters_OptionsManager.php:407
+msgid "Anyone"
+msgstr ""
+
+#: AddActionsAndFilters_Plugin.php:159
+msgid ""
+"Put PHP code here to define functions and add them as <a target=\"_addactions"
+"\" href=\"http://codex.wordpress.org/Function_Reference/add_action"
+"\">actions</a> or <a target=\"_addfilter\" href=\"http://codex.wordpress.org/"
+"Function_Reference/add_filter\">filters</a>. Also add <a target=\"_scripts\" "
+"href=\"http://codex.wordpress.org/Function_Reference/wp_enqueue_script"
+"\">scripts</a> and <a target=\"_styles\" href=\"http://codex.wordpress.org/"
+"Function_Reference/wp_enqueue_style\">styles</a>."
+msgstr ""
+
+#: AddActionsAndFilters_Plugin.php:211
+msgid "Saved"
+msgstr ""
+
+#: add-actions-and-filters.php:42
+msgid ""
+"Error: plugin \"Add Actions And Filters\" requires a newer version of PHP to "
+"be running."
+msgstr ""
+
+#: add-actions-and-filters.php:43
+msgid "Minimal version of PHP required: "
+msgstr ""
+
+#: add-actions-and-filters.php:44
+msgid "Your server's PHP version: "
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Add Actions And Filters"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/add-actions-and-filters/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add PHP Code to create your own Actions and Filters"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Michael Simpson"
+msgstr ""

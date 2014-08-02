@@ -1,0 +1,91 @@
+/*
+Theme Name: Tema modificado
+Theme URI: 
+Author:
+Author URI:
+Description: HTML5 Blank theme with Twitter Bootstrap Framework
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: tema-modificado
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('fonts/stylesheet.css');
+
+
+body {
+	color: #333;
+}
+
+a {
+        color: #00aeef;
+}
+
+a:hover {
+        color: #00aeef;
+}
+
+nav a {
+	color: #888;}
+	
+h1,h2,h3,h4,h5 {
+	margin: 40px 0 25px;
+	font-family: "BebasNeue", sans-serif;
+	color: #00aeef;
+	}
+	
+strong {
+	color: ;
+	}
+
+.wp-image-33 {
+	 padding-bottom: 50px;
+}
+
+.page {
+        padding-top: 50px;}
+
+.single {
+        padding-top: 50px;}
+
+.blog {
+        padding-top: 50px;}
+
+.sinaturas {
+	padding-top: 50px;}
+
+.navbar-brand {
+	font-family: "BebasNeue", sans-serif;
+}
+
+.front-page-header {
+	margin-bottom: 50px;
+}
+
+#asina {
+        color: #000000;
+}
+
+.well > a {
+        color: #00AEEF;
+}
+
+.btn.asina {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	border-color: #00aeef;
+	background-color: #00aeef;}
+
+.btn.asina:hover{
+	background-color: #2BC2FC;}
+
+@media (min-width: 1200px) {
+		.container {
+			width: 960px;
+		}
+}
