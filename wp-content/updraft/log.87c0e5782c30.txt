@@ -147,3 +147,7 @@
 0002.117 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
 0002.119 (0) No email will/can be sent - the user has not configured an email address.
 0002.120 (0) The backup apparently succeeded and is now complete
+0000.000 (1) Opened log file at time: Sat, 02 Aug 2014 12:50:43 +0000 on http://mareatlantica.org
+0000.002 (1) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.1 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-32-lowlatency #57-Ubuntu SMP PREEMPT Tue Jul 15 04:08:59 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 9.5M | 10.3M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+0000.003 (1) Free space on disk containing Updraft's temporary directory: 217377.7 Mb
+0000.004 (1) This backup task began over 2 days ago: aborting (1406983843.7978, )
