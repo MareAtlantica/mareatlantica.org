@@ -18,7 +18,8 @@
   // Gets Wordpress loop ?>
   <div class="col-md-8">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>		
+	<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+        <p>Publicado o <?php the_time('d \d\e F \d\e Y') ?></p>
 	<?php the_content(); ?>
 	<?php comments_template(); ?>
   <?php endwhile; else: ?>
