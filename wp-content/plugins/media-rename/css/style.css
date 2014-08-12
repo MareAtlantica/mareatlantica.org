@@ -1,4 +1,0 @@
-.media-rename .file_ext { font-weight:bold; padding-right:15px; }
-.media-rename .loader { display:none; background:url('../images/loader.gif') no-repeat 0 -2px; width:20px; height:20px; vertical-align:middle; }
-.media-rename .success { display:none; background:url('../images/tick.gif') no-repeat 2px 0; width:16px; height:16px; vertical-align:middle; }
-.media-rename .error { display:none; line-height:23px; padding:0 6px; background:#FFEBE8; border:1px solid #C00; border-radius:3px; }
