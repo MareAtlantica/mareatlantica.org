@@ -15,14 +15,23 @@
  */
   // Gets header-other.php
   get_header("other");
-  // Gets Wordpress loop
-  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  // Gets Wordpress loop ?>
+  <div class="col-md-8">
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>		
 	<?php the_content(); ?>
 	<?php comments_template(); ?>
   <?php endwhile; else: ?>
 	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
   <?php endif; ?>
+  </div>
+  <div class="col-md-4">
+  <?php if ( is_active_sidebar( 'blog_right_1' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'blog_right_1' ); ?>
+	</div><!-- #primary-sidebar -->
+	<?php endif; ?>
+  </div>
   <?php
   // Gets footer.php
   get_footer(); ?>
