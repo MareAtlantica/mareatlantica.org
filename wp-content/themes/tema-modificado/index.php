@@ -14,7 +14,7 @@
  * @since Blank Theme with Bootstrap 1.0
  */
   // Gets header-other.php
-  get_header("other");
+  get_header();
   // Gets Wordpress loop
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<h1><?php the_title(); ?></h1>		
