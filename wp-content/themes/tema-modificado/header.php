@@ -24,23 +24,15 @@
   wp_head(); ?>
 </head>
 <body <?php if (is_front_page()) body_class('home','page'); body_class(); ?>>
-      <header role="banner" <?php if (is_front_page()) { echo 'class="front-page-header"'; } ?>>
-   <?php if ( get_header_image() ) : ?>
-         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image, img-responsive" alt="" /></a>
-   <?php endif; ?>
-         <hgroup>
-            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-	    <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-         </hgroup>
-
-      </header>
-       <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"
+<!-- Menú fixo superior -->
+	<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
 
 		<?php 
 			// Fix menu overlap bug..
 			if ( is_admin_bar_showing() ) echo '<div style="padding-top: 28px; min-height: 28px;"></div>'; 
 		?>
          <!-- Mobile display -->
+         <div class="container">
             <div class="navbar-header">
 	       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 		   <span class="sr-only">Toggle navigation</span>
@@ -51,15 +43,39 @@
 	       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 	    </div>
       <!-- Collect the nav links for toggling -->
-   <?php // Loading WordPress Custom Menu
-      wp_nav_menu( array(
-	'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
-        'menu_class'      => 'nav navbar-nav',
-	'menu'		  => 'Menú principal',
-        'theme-location'  => 'main-menu',
-	'fallback_cb'	  => 'wp_bootstrap_navwalker::fallback',
-        'walker'          => new wp_bootstrap_navwalker()
-      ) );
-   ?>
-       </nav>
+	   <?php // Loading WordPress Custom Menu
+	      wp_nav_menu( array(
+		'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
+	        'menu_class'      => 'nav navbar-nav',
+		'menu'		  => 'Menú principal',
+	        'theme-location'  => 'main-menu',
+		'fallback_cb'	  => 'wp_bootstrap_navwalker::fallback',
+	        'walker'          => new wp_bootstrap_navwalker()
+	      ) );
+	   ?>
+       </div></nav>      
+      
+      <header role="banner" <?php if (is_front_page()) { echo 'class="front-page-header jumbotron"'; } ?>>
+   		<?php if ( get_header_image() ) : ?>
+         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image, img-responsive" alt="" /></a>
+  			 <?php endif; ?>
+  			 <?php if (is_front_page()) { echo '
+
+					<div class="container">
+						<h1>Marea Atlántica</h1>
+						<p>E ti, tamén ventas a marea?<br/>
+						Asina para que suba de vez.</p>
+						<a title="Quienes somos" href="asina" class="btn btn-primary">Asina</a>
+
+				</div>'; } 
+			?>
+         <hgroup >
+            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	    <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+         </hgroup>
+		
+
+      </header>
+       
+       
        <div class="container">
