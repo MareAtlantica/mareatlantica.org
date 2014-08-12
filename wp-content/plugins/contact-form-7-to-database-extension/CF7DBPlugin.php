@@ -28,6 +28,7 @@ require_once('CFDBShortcodeJson.php');
 require_once('CFDBShortcodeHtml.php');
 require_once('CFDBShortcodeExportUrl.php');
 require_once('CFDBShortCodeSavePostData.php');
+require_once('CFDBShortCodeSaveFormMakerSubmission.php');
 require_once('CFDBDeobfuscate.php');
 
 /**
@@ -107,86 +108,83 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle {
         global $wpdb;
         $upgradeOk = true;
         $savedVersion = $this->getVersionSaved();
-        if (!$savedVersion) { // Prior to storing version in options (pre 1.2)
-            // DB Schema Upgrade to support i18n using UTF-8
-            $tableName = $this->getSubmitsTableName();
-            $wpdb->show_errors();
-            $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` MODIFY form_name VARCHAR(127) CHARACTER SET utf8");
-            $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` MODIFY field_name VARCHAR(127) CHARACTER SET utf8");
-            $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` MODIFY field_value longtext CHARACTER SET utf8");
-            $wpdb->hide_errors();
+        if (!$savedVersion) {
+            // Was some code here from pre-version 1.2 that I removed b/c it is very old and not relevant.
 
-            // Remove obsolete options
-            $this->deleteOption('_displayName');
-            $this->deleteOption('_metatdata');
-            $savedVersion = '1.0';
-        }
+            // A user reported an issue where the saved version in the DB would get cleared out
+            // after using the plugin for a week or so. Weird and not reproducible. But the problem is that
+            // it would make it re-run through the upgrades below even though they need not be applied.
+            // the ALTER TABLE statements would fail and product errors on the page.
+            // Without solving the underlying problem, I'm going to have upgrade actions be skipped
+            // in the case where no version is recorded in the DB.
+        } else {
 
-        if ($this->isVersionLessThan($savedVersion, '2.4.1')) {
-            if ($this->isVersionLessThan($savedVersion, '2.2')) {
-                if ($this->isVersionLessThan($savedVersion, '2.0')) {
-                    if ($this->isVersionLessThan($savedVersion, '1.8')) {
-                        if ($this->isVersionLessThan($savedVersion, '1.4.5')) {
-                            if ($this->isVersionLessThan($savedVersion, '1.3.1')) {
-                                // Version 1.3.1 update
-                                $tableName = $this->getSubmitsTableName();
-                                $wpdb->show_errors();
-                                $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` ADD COLUMN `field_order` INTEGER");
-                                $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` ADD COLUMN `file` LONGBLOB");
-                                $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `submit_time_idx` ( `submit_time` )");
-                                $wpdb->hide_errors();
+            if ($this->isVersionLessThan($savedVersion, '2.4.1')) {
+                if ($this->isVersionLessThan($savedVersion, '2.2')) {
+                    if ($this->isVersionLessThan($savedVersion, '2.0')) {
+                        if ($this->isVersionLessThan($savedVersion, '1.8')) {
+                            if ($this->isVersionLessThan($savedVersion, '1.4.5')) {
+                                if ($this->isVersionLessThan($savedVersion, '1.3.1')) {
+                                    // Version 1.3.1 update
+                                    $tableName = $this->getSubmitsTableName();
+                                    $wpdb->show_errors();
+                                    $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` ADD COLUMN `field_order` INTEGER");
+                                    $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` ADD COLUMN `file` LONGBLOB");
+                                    $upgradeOk &= false !== $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `submit_time_idx` ( `submit_time` )");
+                                    $wpdb->hide_errors();
+                                }
+
+                                // Version 1.4.5 update
+                                if (!$this->getOption('CanSeeSubmitDataViaShortcode')) {
+                                    $this->addOption('CanSeeSubmitDataViaShortcode', 'Anyone');
+                                }
+
+                                // Misc
+                                $submitDateTimeFormat = $this->getOption('SubmitDateTimeFormat');
+                                if (!$submitDateTimeFormat || $submitDateTimeFormat == '') {
+                                    $this->addOption('SubmitDateTimeFormat', 'Y-m-d H:i:s P');
+                                }
+
                             }
-
-                            // Version 1.4.5 update
-                            if (!$this->getOption('CanSeeSubmitDataViaShortcode')) {
-                                $this->addOption('CanSeeSubmitDataViaShortcode', 'Anyone');
+                            // Version 1.8 update
+                            if (!$this->getOption('MaxRows')) {
+                                $this->addOption('MaxRows', '100');
                             }
-
-                            // Misc
-                            $submitDateTimeFormat = $this->getOption('SubmitDateTimeFormat');
-                            if (!$submitDateTimeFormat || $submitDateTimeFormat == '') {
-                                $this->addOption('SubmitDateTimeFormat', 'Y-m-d H:i:s P');
-                            }
-
+                            $tableName = $this->getSubmitsTableName();
+                            $wpdb->show_errors();
+                            /* $upgradeOk &= false !== */
+                            $wpdb->query("ALTER TABLE `$tableName` MODIFY COLUMN submit_time DECIMAL(16,4) NOT NULL");
+                            /* $upgradeOk &= false !== */
+                            $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `form_name_idx` ( `form_name` )");
+                            /* $upgradeOk &= false !== */
+                            $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `form_name_field_name_idx` ( `form_name`, `field_name` )");
+                            $wpdb->hide_errors();
                         }
-                        // Version 1.8 update
-                        if (!$this->getOption('MaxRows')) {
-                            $this->addOption('MaxRows', '100');
-                        }
+
+                        // Version 2.0 upgrade
                         $tableName = $this->getSubmitsTableName();
-                        $wpdb->show_errors();
-                        /* $upgradeOk &= false !== */
-                        $wpdb->query("ALTER TABLE `$tableName` MODIFY COLUMN submit_time DECIMAL(16,4) NOT NULL");
-                        /* $upgradeOk &= false !== */
-                        $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `form_name_idx` ( `form_name` )");
-                        /* $upgradeOk &= false !== */
-                        $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `form_name_field_name_idx` ( `form_name`, `field_name` )");
-                        $wpdb->hide_errors();
+                        $oldTableName = $this->prefixTableName('SUBMITS');
+                        @$wpdb->query("RENAME TABLE `$oldTableName` TO `$tableName`");
                     }
 
-                    // Version 2.0 upgrade
+                    // Version 2.2 upgrade
                     $tableName = $this->getSubmitsTableName();
-                    $oldTableName = $this->prefixTableName('SUBMITS');
-                    @$wpdb->query("RENAME TABLE `$oldTableName` TO `$tableName`");
+                    $wpdb->query("ALTER TABLE `$tableName` DROP INDEX `form_name_field_name_idx`");
+                    $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `field_name_idx` ( `field_name` )");
                 }
 
-                // Version 2.2 upgrade
+                // Version 2.4.1 upgrade
                 $tableName = $this->getSubmitsTableName();
-                $wpdb->query("ALTER TABLE `$tableName` DROP INDEX `form_name_field_name_idx`");
-                $wpdb->query("ALTER TABLE `$tableName` ADD INDEX `field_name_idx` ( `field_name` )");
+                $oldTableName = strtolower($tableName);
+                $wpdb->query("RENAME TABLE '$oldTableName' TO '$tableName'");
             }
 
-            // Version 2.4.1 upgrade
-            $tableName = $this->getSubmitsTableName();
-            $oldTableName = strtolower($tableName);
-            $wpdb->query("RENAME TABLE '$oldTableName' TO '$tableName'");
         }
-
 
         // Post-upgrade, set the current version in the options
         $codeVersion = $this->getVersion();
-        if ($upgradeOk && $savedVersion != $codeVersion) {
-            $this->saveInstalledVersion();
+        if ($upgradeOk && $codeVersion && $savedVersion != $codeVersion) {
+            $this->saveInstalledVersion($codeVersion);
         }
     }
 
@@ -273,7 +271,8 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle {
 
         // Hook into Contact Form 7 when a form post is made to save the data to the DB
         if ($this->getOption('IntegrateWithCF7', 'true') == 'true') {
-            add_action('wpcf7_before_send_mail', array(&$this, 'saveFormData'));
+            add_action('wpcf7_before_send_mail', array(&$this, 'saveCF7FormData'));
+            //add_action('wpcf7_posted_data', array(&$this, 'saveCF7FormData'));
         }
 
         // Hook into Fast Secure Contact Form
@@ -346,6 +345,10 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle {
         // Shortcode to save data from non-CF7/FSCF forms
         $sc = new CFDBShortCodeSavePostData();
         $sc->register('cfdb-save-form-post');
+
+        // Shortcode to save data Form Maker submissions
+        $sc = new CFDBShortCodeSaveFormMakerSubmission();
+        $sc->register('cfdb-save-form-maker-post');
     }
 
     public function ajaxLogin() {
@@ -529,22 +532,46 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle {
     /**
      * Callback from Contact Form 7. CF7 passes an object with the posted data which is inserted into the database
      * by this function.
-     * Also callback from Fast Secure Contact Form
+     * @param $cf7 WPCF7_ContactForm
+     * @return bool
+     */
+    public function saveCF7FormData($cf7) {
+        if (!isset($cf7->posted_data) && class_exists('WPCF7_Submission')) {
+            // Contact Form 7 version 3.9 removed $cf7->posted_data and now
+            // we have to retrieve it from an API
+            $submission = WPCF7_Submission::get_instance();
+            if ($submission) {
+                $data = array();
+                $data['title'] = $cf7->title();
+                $data['posted_data'] = $submission->get_posted_data();
+                $data['uploaded_files'] = $submission->uploaded_files();
+                $this->saveFormData((object) $data);
+            }
+        } else {
+            $this->saveFormData($cf7);
+        }
+        return true;
+    }
+
+    /**
+     * Callback for saving form data. Originally based on Contact Form 7's callback object
+     * with submission data in $cf7->posted_data. However that has changed over time.
+     * FSCF sends an object matching this data structure. Other form plugins have their data
+     * transformed into the expected data structure via other callbacks in this class
      * @param $cf7 WPCF7_ContactForm|object the former when coming from CF7, the latter $fsctf_posted_data object variable
-     * if coming from FSCF
      * @return bool
      */
     public function saveFormData($cf7) {
         try {
-
             $time = function_exists('microtime') ? microtime(true) : time();
+            $time = number_format($time, 4, '.', ''); // Bug fix: on some systems microtime is in scientific notation when converted to string
             $ip = (isset($_SERVER['X_FORWARDED_FOR'])) ? $_SERVER['X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
 
             // Set up to allow all this data to be filtered
             $cf7->submit_time = $time;
             $cf7->ip = $ip;
             $user = null;
-            if (is_user_logged_in()) {
+            if (function_exists('is_user_logged_in') && is_user_logged_in()) {
                 $current_user = wp_get_current_user(); // WP_User
                 $user = $current_user->user_login;
             }
@@ -563,16 +590,21 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle {
                     // Returning null from cfdb_form_data is a way to stop from saving the form
                     return true;
                 }
-
-                // Get title after applying filter
-                $title = stripslashes($cf7->title);
-                if ($this->fieldMatches($title, $this->getNoSaveForms())) {
-                    return true; // Don't save in DB
-                }
-
             }
             catch (Exception $ex) {
                 error_log(sprintf('CFDB Error: %s:%s %s  %s', $ex->getFile(), $ex->getLine(), $ex->getMessage(), $ex->getTraceAsString()));
+            }
+
+            // Get title after applying filter
+            if (isset($cf7->title)) {
+                $title = $cf7->title;
+            } else {
+                $title = 'Unknown';
+            }
+            $title = stripslashes($title);
+
+            if ($this->fieldMatches($title, $this->getNoSaveForms())) {
+                return true; // Don't save in DB
             }
 
             $tableName = $this->getSubmitsTableName();
