@@ -17,7 +17,7 @@
   get_header();
   // Gets Wordpress loop
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<h1><?php the_title(); ?></h1>		
+	<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>		
 	<?php the_content(); ?>
 	<?php comments_template(); ?>
   <?php endwhile; else: ?>
