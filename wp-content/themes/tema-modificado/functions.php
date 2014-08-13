@@ -11,6 +11,7 @@
   // Register Theme Features
   // Loads Custom Header setup file (taken from twentytwelve theme).
 require( get_template_directory() . '/inc/custom-header.php' );
+  // Includes Twitter Bootstrap.
 function wp_bootstrap_scripts_styles() {
   // Loads Bootstrap minified JavaScript file.
   wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'),'3.0.0', true );
@@ -22,8 +23,7 @@ function wp_bootstrap_scripts_styles() {
   wp_enqueue_script('holder', get_template_directory_uri() . '/js/holder.js', array ('jquery'), null, true );
 }
 add_action('wp_enqueue_scripts', 'wp_bootstrap_scripts_styles');
-
-// Adds the menus
+  // Adds the menus
 function register_my_menus() {
   register_nav_menus( array(
       'main-menu' => 'Páxina principal',
@@ -31,10 +31,9 @@ function register_my_menus() {
     ) );
 }
 add_action( 'init', 'register_my_menus' );
-// Register Custom Navigation Walker
+  // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
-?>
-<?php
+
 /**
  * Register our sidebars and widgetized areas.
  *
@@ -51,4 +50,12 @@ function arphabet_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
-?>
+
+  //Add thumbnails support.
+add_theme_support( 'post-thumbnails' );
+
+  //Add read more link to excerpt.
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Máis...', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' ); ?>
