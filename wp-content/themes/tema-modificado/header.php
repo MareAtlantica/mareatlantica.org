@@ -24,7 +24,13 @@
   wp_head(); ?>
 </head>
 <body <?php if (is_front_page()) body_class('home','page'); body_class(); ?>>
-      <header role="banner" <?php if (is_front_page()) { echo 'class="front-page-header"'; } ?>>
+      <header role="banner" <?php if (is_front_page()) { echo 'class="front-page-header jumbotron"'; } ?>>
+         <?php if (is_front_page()) { echo '<div class="container">
+		<h1>MAREA ATLANTICA</h1>
+			<p>E ti, tamén ventas a marea?<br/>
+			Asina para que suba de vez.</p>
+			<a title="Quienes somos" href="asina" class="btn btn-primary">Asina</a>
+	</div>'; } ?>
    <?php if ( get_header_image() ) : ?>
          <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image, img-responsive" alt="" /></a>
    <?php endif; ?>
@@ -34,6 +40,7 @@
          </hgroup>
 
       </header>
+
        <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"
 
 		<?php 
