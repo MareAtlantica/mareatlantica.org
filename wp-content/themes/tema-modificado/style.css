@@ -61,10 +61,24 @@ strong {
 .navbar-brand {
 	font-family: "BebasNeue", sans-serif;
 }
-
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .current-menu-ancestor, .current-menu-parent {
+    background-color:#59D1FF;
+    color: #555;}
+    
 .front-page-header {
-	margin-bottom: 50px;
+
 }
+.jumbotron {
+    background: url(img/fondo_header.jpg) no-repeat top center #eee;
+    background-size:auto 100%;}
+.jumbotron h1{
+	color: #00AEEF}
+.jumbotron .btn {
+	border-color: #00aeef;
+	background-color: #00aeef;}
+.jumbotron .btn:hover {
+	background-color: #2BC2FC;}
+
 
 #asina {
         color: #000000;
@@ -81,15 +95,61 @@ strong {
 	border-color: #00aeef;
 	background-color: #00aeef;}
 
+	
 .btn.asina:hover{
 	background-color: #2BC2FC;}
 
-@media (min-width: 1200px) {
-		.container {
-			width: 960px;
-		}
+.novas{
+		background: #EEE;
+}
+.novas ul{
+	padding: 0;}
+	
+.novas li{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 15px 0 20px;
+	list-style: none;
+	border-bottom: 1px solid #FFF;
 }
 
-.novas {
-    background: none repeat scroll 0% 0% #EEE;
+.novas h3{
+	margin: 10px 0 5px;;
+	font-size: 24px;}
+.novas p{
+	font-size: 14px;
+}
+
+.novas .more{
+	text-align: right;
+	font-size: 12px;
+	}
+
+/* 
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/ 
+*/
+
+/* 
+This element holds injected scripts inside iframes that in 
+some cases may stretch layouts. So, we're just hiding it. 
+*/
+
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}
+
+
+.fb-like-box {
+	border-radius: 5px;
+	border: 1px solid #e8e8e8;
+	    }
+@media (min-width: 1200px) {
+		
 }
