@@ -29,7 +29,7 @@
 		<h1>MAREA ATLANTICA</h1>
 			<p>E ti, tamén ventas a marea?<br/>
 			Asina para que suba de vez.</p>
-			<a title="Quienes somos" href="asina" class="btn btn-primary">Asina</a>
+			<a title="Asina" href="#asina" class="btn btn-primary">Asina</a>
 	</div>'; } ?>
    <?php if ( get_header_image() ) : ?>
          <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image, img-responsive" alt="" /></a>
