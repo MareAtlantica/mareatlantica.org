@@ -24,8 +24,12 @@
   wp_head(); ?>
 </head>
 <body <?php if (is_front_page()) body_class('home','page'); body_class(); ?>>
+
 <!-- Menú fixo superior -->
-	<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+
+       <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
 
 		<?php 
 			// Fix menu overlap bug..
