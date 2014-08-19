@@ -25,7 +25,6 @@
 			<?php while ($recent_posts -> have_posts()) : $recent_posts -> the_post(); ?>
 
 
-
        		
 				   	<div class="row">
 				  			<div class="col-md-4 novas"><h2>Actualidade</h2>
@@ -51,8 +50,16 @@
 				  			<div class="col-md-4"><div class="fb-like-box" data-href="https://www.facebook.com/mareatlantica" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
 							</div>
 						</div>
+  <?php
+// Gets Wordpress loop
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php the_content(); ?>
+<?php comments_template(); ?>
+<?php endwhile; else: ?>
+<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif; ?>
+
 
   <?php
   // Gets footer.php
   get_footer(); ?>
-
