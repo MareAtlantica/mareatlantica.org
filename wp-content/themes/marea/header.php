@@ -34,7 +34,7 @@
 
 		<?php 
 			// Fix menu overlap bug..
-			if ( is_admin_bar_showing() ) echo '<div style="padding-top: 28px; min-height: 28px;"></div>'; 
+			if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>'; 
 		?>
          <!-- Mobile display -->
          <div class="navbar-header">

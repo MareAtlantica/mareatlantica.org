@@ -331,3 +331,10 @@
 5946.980 (8) Terminate: check-in exists with activity within the last 30 seconds (time_mod=1408534436.6, time_now=1408534436.6, diff=0, size=n/a). This likely means that another UpdraftPlus run is at work; so we will exit.
 5946.982 (8) Rescheduling resumption 9: moving to 420 seconds from now (1408534856)
 5946.994 (8) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 120 = 420
+6418.853 (9) Opened log file at time: Wed, 20 Aug 2014 11:41:48 +0000 on http://localhost:8080/mareatlantica
+6418.858 (9) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 25M | 25.5M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+6418.860 (9) Free space on disk containing Updraft's temporary directory: 207008.4 Mb
+6418.864 (9) Terminate: check-in exists with activity within the last 30 seconds (time_mod=1408534908.5, time_now=1408534908.5, diff=0, size=n/a). This likely means that another UpdraftPlus run is at work; so we will exit.
+6418.866 (9) A new resumption will be scheduled to prevent the job ending
+6418.867 (9) Rescheduling resumption 10: moving to 420 seconds from now (1408535328)
+6418.871 (9) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 120 = 420
