@@ -30,7 +30,7 @@
 
 
         <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-
+				<div class="container">
 
 		<?php 
 			// Fix menu overlap bug..
@@ -57,6 +57,7 @@
 	        'walker'          => new wp_bootstrap_navwalker()
 	      ) );
 	   ?>
+	  </div>
        </nav> 
 		
 		<?php do_action( '__before_header' ); ?>

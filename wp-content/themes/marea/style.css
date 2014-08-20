@@ -16,6 +16,7 @@
 -------------------------------------------------------------- */
 @import url('fonts/stylesheet.css');
 
+*{box-sizing:content-box}
 
 body {
 	color: #333;
@@ -36,11 +37,29 @@ h1,h2,h3,h4,h5 {
 	font-family: "BebasNeue", sans-serif;
 	color: #00aeef;
 	}
-
+.navbar-fixed-top {
+	position: absolute;
+	margin: 0;}
 
 .navbar-brand {
 	font-family: "BebasNeue", sans-serif;
+	height: auto;
 }
+.navbar .nav{
+	margin-top: 7px;}
+.navbar .nav > li > a {
+	color: white;
+	text-shadow:none;}
+	
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+    border-bottom-color: white;
+    border-top-color: white;}
+    
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .current-menu-ancestor, .current-menu-parent {
     background-color:#59D1FF;
-    color: #555;}
+    color: #555;}*/
