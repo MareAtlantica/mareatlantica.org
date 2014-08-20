@@ -1,0 +1,151 @@
+0000.017 (0) Opened log file at time: Wed, 20 Aug 2014 09:54:49 +0000 on http://localhost:8080/mareatlantica
+0000.037 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 7.2M | 7.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y W3TC/ObjectCache: N
+0000.038 (0) Free space on disk containing Updraft's temporary directory: 207049 Mb
+0000.040 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: twicedaily)
+0000.041 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 
+0000.043 (0) Requesting semaphore lock (f)
+0000.045 (0) Set semaphore last lock (f) time to 2014-08-20 09:54:49
+0000.045 (0) Semaphore lock (f) complete
+0000.048 (0) Backup run: resumption=0, nonce=d023d77b6e5c, begun at=1408528489 (0s ago), job type=backup
+0000.050 (0) Scheduling a resumption (1) after 300 seconds (1408528789) in case this run gets aborted
+0000.052 (0) Checking if we have a zip executable available
+0000.052 (0) Testing: /usr/bin/zip
+0000.138 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.141 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.142 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.143 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=127) (out=105) (deflated 17%)
+0000.145 (0) Output: total bytes=127, compressed=105 -> 17% savings
+0000.155 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=134) (out=109) (deflated 19%)
+0000.158 (0) Output: total bytes=261, compressed=214 -> 18% savings
+0000.197 (0) Working binary zip found: /usr/bin/zip
+0000.198 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.199 (0) Creation of backups of directories: beginning
+0000.202 (0) Beginning creation of dump of plugins (split every: 800 Mb)
+0000.582 (0) Total entities for the zip file: 395 directories, 2451 files (0 skipped as non-modified), 31 Mb
+0000.585 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0000.591 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0000.594 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0000.596 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0000.599 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0000.600 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6 Mb, 2451 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0001.647 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: size is now: 2.70 Mb
+0001.652 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 600 files added (on-disk size: 2731.9 Kb)
+0001.654 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 700 files added (on-disk size: 2731.9 Kb)
+0001.657 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 800 files added (on-disk size: 2731.9 Kb)
+0001.659 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 900 files added (on-disk size: 2731.9 Kb)
+0001.661 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1000 files added (on-disk size: 2731.9 Kb)
+0001.662 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.9 Mb, 2451 files batched, 501 (1002) added so far); re-opening (prior size: 2731.9 Kb)
+0002.429 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: size is now: 4.50 Mb
+0002.435 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1100 files added (on-disk size: 4640.1 Kb)
+0002.438 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1200 files added (on-disk size: 4640.1 Kb)
+0002.442 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1300 files added (on-disk size: 4640.1 Kb)
+0002.445 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1400 files added (on-disk size: 4640.1 Kb)
+0002.447 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1500 files added (on-disk size: 4640.1 Kb)
+0002.448 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (9.6 Mb, 2451 files batched, 501 (1503) added so far); re-opening (prior size: 4640.1 Kb)
+0003.890 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: size is now: 7.90 Mb
+0003.895 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1600 files added (on-disk size: 8112 Kb)
+0003.898 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1700 files added (on-disk size: 8112 Kb)
+0003.901 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1800 files added (on-disk size: 8112 Kb)
+0003.904 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 1900 files added (on-disk size: 8112 Kb)
+0003.906 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 2000 files added (on-disk size: 8112 Kb)
+0003.907 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.3 Mb, 2451 files batched, 501 (2004) added so far); re-opening (prior size: 8112 Kb)
+0005.007 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: size is now: 10.80 Mb
+0005.013 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 2100 files added (on-disk size: 11091.6 Kb)
+0005.015 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 2200 files added (on-disk size: 11091.6 Kb)
+0005.018 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 2300 files added (on-disk size: 11091.6 Kb)
+0005.022 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: 2400 files added (on-disk size: 11091.6 Kb)
+0005.799 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip.tmp: size is now: 13.10 Mb
+0005.881 (0) Created plugins zip (0) - 13401.8 Kb in 5.7 s (2360.4 Kb/s) (SHA1 checksum: 53d7ad7b38ce1648e76ea1eacbfc302e6bac87c1)
+0005.883 (0) Beginning creation of dump of themes (split every: 800 Mb)
+0005.957 (0) Total entities for the zip file: 54 directories, 419 files (0 skipped as non-modified), 12.6 Mb
+0005.960 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0005.965 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0005.970 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0005.972 (0) Zip: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0007.141 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip.tmp: size is now: 4.00 Mb
+0007.168 (0) Created themes zip (0) - 4122.2 Kb in 1.3 s (3210.9 Kb/s) (SHA1 checksum: 779e1dc4f841995088a26aa9c8e12cb6e5664947)
+0007.170 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0007.172 (0) Looking for candidates to back up in: /var/www/html/mareatlantica/wp-content/uploads
+0007.172 (0) finding files: backwpup-45fb60-temp: skipping: excluded by options (glob)
+0007.173 (0) finding files: backwpup-45fb60-backups: skipping: excluded by options (glob)
+0007.174 (0) finding files: backwpup-45fb60-backups: skipping: excluded by options (glob)
+0007.175 (0) finding files: wpcf7_captcha: adding to list (1)
+0007.176 (0) finding files: bpfb: adding to list (2)
+0007.177 (0) finding files: 2014: adding to list (3)
+0007.178 (0) finding files: avatars: adding to list (4)
+0007.179 (0) finding files: buddydrive: adding to list (5)
+0007.180 (0) finding files: bp-attachments: adding to list (6)
+0007.182 (0) finding files: group-avatars: adding to list (7)
+0007.183 (0) finding files: backwpup-45fb60-logs: skipping: excluded by options (glob)
+0007.184 (0) Beginning creation of dump of uploads (split every: 800 Mb)
+0007.214 (0) Total entities for the zip file: 15 directories, 20 files (0 skipped as non-modified), 1.3 Mb
+0007.367 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip.tmp: size is now: 1.20 Mb
+0007.375 (0) Created uploads zip (0) - 1277.8 Kb in 0.2 s (6732.8 Kb/s) (SHA1 checksum: 1b9edaac655ab2022320762300440ff3291e55eb)
+0007.377 (0) Beginning backup of other directories found in the content directory (index: 0)
+0007.378 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups
+0007.379 (0) Looking for candidates to back up in: /var/www/html/mareatlantica/wp-content
+0007.379 (0) finding files: languages: adding to list (1)
+0007.380 (0) finding files: logs: adding to list (2)
+0007.381 (0) finding files: extensions: adding to list (3)
+0007.381 (0) finding files: cache: skipping: excluded by options
+0007.382 (0) finding files: themes: skipping: this is the themes directory
+0007.383 (0) finding files: plugins: skipping: this is the plugins directory
+0007.383 (0) finding files: updraft: skipping: this is the updraft directory
+0007.384 (0) finding files: uploads: skipping: this is the uploads directory
+0007.385 (0) finding files: index.php: adding to list (4)
+0007.386 (0) finding files: upgrade: skipping: excluded by options
+0007.410 (0) Total entities for the zip file: 8 directories, 24 files (0 skipped as non-modified), 2.1 Mb
+0007.812 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip.tmp: size is now: 0.60 Mb
+0007.818 (0) Created others zip (0) - 665 Kb in 0.4 s (1546.5 Kb/s) (SHA1 checksum: 9aacff8b55c0c70f424d7e9a2fa1169976e1674e)
+0007.822 (0) Saving backup status to database (elements: 8)
+0007.825 (0) No database backup (wp) - not part of this run
+0007.826 (0) Saving backup history
+0007.828 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0007.830 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0007.831 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0007.832 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: others: This file has not yet been successfully uploaded: will queue
+0007.836 (0) Requesting upload of the files that have not yet been successfully uploaded (4)
+0007.840 (0) Cloud backup selection: email
+0007.841 (0) Beginning dispatch of backup to remote (email)
+0007.842 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: email to: dalar...
+0008.219 (0) Mails were not sent successfully
+0008.221 (0) An error condition has occurred for the first time during this job
+0008.223 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: email to: dalar...
+0008.445 (0) Recording as successfully uploaded: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip (f6a6ff9ea93ec3fe212cb5a6ee85a46c)
+0008.452 (0) Deleting local file: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: OK
+0008.453 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: email to: dalar...
+0008.561 (0) Recording as successfully uploaded: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip (aa5c65e5d0ff8f63362ee7185137bb61)
+0008.567 (0) Deleting local file: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: OK
+0008.568 (0) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: email to: dalar...
+0008.645 (0) Recording as successfully uploaded: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip (1d42b9ae428f1a8f8fb7bd411c12420e)
+0008.649 (0) Deleting local file: backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: OK
+0008.652 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0008.654 (0) Number of backup sets in history: 5
+0008.655 (0) Examining backup set with datestamp: 1408528489 (Aug 20 2014 09:54:49)
+0008.658 (0) 1408528489: this backup set remains non-empty (1/0); will retain in history
+0008.659 (0) Examining backup set with datestamp: 1408524691 (Aug 20 2014 08:51:31)
+0008.660 (0) 1408524691: db: this set includes a database (backup_2014-08-20-1051_MAREA_ATLNTICA_6d1e0da70a30-db.gz); db count is now 1
+0008.662 (0) 1408524691: this backup set remains non-empty (0/1); will retain in history
+0008.663 (0) Examining backup set with datestamp: 1407578141 (Aug 09 2014 09:55:41)
+0008.664 (0) 1407578141: db: this set includes a database (backup_2014-08-09-1155_MAREA_ATLNTICA_69e8acbd5dcb-db.gz); db count is now 2
+0008.666 (0) 1407578141: this backup set remains non-empty (0/1); will retain in history
+0008.667 (0) Examining backup set with datestamp: 1407318421 (Aug 06 2014 09:47:01)
+0008.669 (0) 1407318421: this backup set remains non-empty (1/0); will retain in history
+0008.670 (0) Examining backup set with datestamp: 1406713702 (Jul 30 2014 09:48:22)
+0008.671 (0) plugins: 1406713702: over retain limit (2); will delete this file (backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-plugins.zip)
+0008.671 (0) themes: 1406713702: over retain limit (2); will delete this file (backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-themes.zip)
+0008.672 (0) uploads: 1406713702: over retain limit (2); will delete this file (backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-uploads.zip)
+0008.673 (0) others: 1406713702: over retain limit (2); will delete this file (backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-others.zip)
+0008.674 (0) Delete file: backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-plugins.zip, service=email
+0008.675 (0) Delete file: backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-themes.zip, service=email
+0008.676 (0) Delete file: backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-uploads.zip, service=email
+0008.677 (0) Delete file: backup_2014-07-30-1148_MAREA_ATLNTICA_f6a5b9d41026-others.zip, service=email
+0008.679 (0) 1406713702: this backup set is now empty; will remove from history
+0008.679 (0) 1406713702: deleting log file (log.f6a5b9d41026.txt)
+0008.691 (0) Retain: saving new backup history (sets now: 4) and finishing retain operation
+0008.695 (0) Resume backup (d023d77b6e5c, 0): finish run
+0008.697 (0) Decremented the semaphore (f) by 1
+0008.698 (0) Semaphore (f) unlocked
+0008.699 (0) There were errors in the uploads, so the 'resume' event is remaining scheduled
+0008.701 (0) No email will/can be sent - the user has not configured an email address.
+0008.702 (0) The backup has not finished; a resumption is scheduled
