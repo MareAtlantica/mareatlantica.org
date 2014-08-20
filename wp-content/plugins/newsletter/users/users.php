@@ -80,26 +80,35 @@ class NewsletterUsers extends NewsletterModule {
         //$this->add_admin_page('index', 'Old search');
     }
 
-    function export() {
+    function export($options = null) {
         global $wpdb;
 
         header('Content-Type: application/octet-stream');
         header('Content-Disposition: attachment; filename="newsletter-subscribers.csv"');
 
+        // BOM
+        echo "\xEF\xBB\xBF";
+        
+        $sep = ';';
+        if ($options) {
+            $sep = $options['separator'];
+        }
+        
         // CSV header
-        echo '"Email";"Name";"Surname";"Sex";"Status";"Date";"Token";';
+        echo '"Email"' . $sep . '"Name"' . $sep . '"Surname"' . $sep . '"Sex"' . $sep . '"Status"' . $sep . '"Date"' . $sep . '"Token";';
 
         // In table profiles
         for ($i = 1; $i <= NEWSLETTER_PROFILE_MAX; $i++) {
-            echo '"Profile ' . $i . '";'; // To adjust with field name
+            echo '"Profile ' . $i . '"' . $sep; // To adjust with field name
         }
 
         // Lists
         for ($i = 1; $i <= NEWSLETTER_LIST_MAX; $i++) {
-            echo '"List ' . $i . '";';
+            echo '"List ' . $i . '"' . $sep;
         }
 
-        echo '"Feed by mail";"Follow up"';
+        echo '"Feed by mail"' . $sep . '"Follow up"' . $sep;
+        echo '"IP"' . $sep . '"Referrer"' . $sep . '"Country"';
 
         echo "\n";
 
@@ -111,23 +120,26 @@ class NewsletterUsers extends NewsletterModule {
             }
             $recipients = $wpdb->get_results($query . " order by email limit " . $page * 500 . ",500");
             for ($i = 0; $i < count($recipients); $i++) {
-                echo '"' . $recipients[$i]->email . '";"' . $this->sanitize_csv($recipients[$i]->name) .
-                '";"' . $this->sanitize_csv($recipients[$i]->surname) .
-                '";"' . $recipients[$i]->sex .
-                '";"' . $recipients[$i]->status . '";"' . $recipients[$i]->created . '";"' . $recipients[$i]->token . '";';
+                echo '"' . $recipients[$i]->email . '"' . $sep . '"' . $this->sanitize_csv($recipients[$i]->name) .
+                '"' . $sep . '"' . $this->sanitize_csv($recipients[$i]->surname) .
+                '"' . $sep . '"' . $recipients[$i]->sex .
+                '"' . $sep . '"' . $recipients[$i]->status . '"' . $sep . '"' . $recipients[$i]->created . '";"' . $recipients[$i]->token . '"' . $sep;
 
                 for ($j = 1; $j <= NEWSLETTER_PROFILE_MAX; $j++) {
                     $column = 'profile_' . $j;
-                    echo $this->sanitize_csv($recipients[$i]->$column) . ';';
+                    echo '"' . $this->sanitize_csv($recipients[$i]->$column) . '"' . $sep;
                 }
 
                 for ($j = 1; $j <= NEWSLETTER_LIST_MAX; $j++) {
                     $list = 'list_' . $j;
-                    echo $recipients[$i]->$list . ';';
+                    echo '"' . $recipients[$i]->$list . '"' . $sep;
                 }
 
-                echo $recipients[$i]->feed . ';';
-                echo $recipients[$i]->followup . ';';
+                echo '"' . $recipients[$i]->feed . '"' . $sep;
+                echo '"' . $recipients[$i]->followup . '"' . $sep;
+                echo '"' . $recipients[$i]->ip . '"' . $sep;
+                echo '"' . $recipients[$i]->referrer . '"' . $sep;
+                echo '"' . $recipients[$i]->country . '"' . $sep;
 
                 echo "\n";
                 flush();

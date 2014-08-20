@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This is only demo code just to make the demo Feed by Mail panel work.
  */
@@ -36,12 +37,23 @@ class NewsletterFeed extends NewsletterModule {
         require $this->themes->get_file_path($options['theme'], 'theme.php');
         $email['message'] = ob_get_clean();
 
+        if (!empty($theme_subject)) {
+            $email['subject'] = $theme_subject;
+        } else {
+            $email['subject'] = trim($options['subject']);
+        }
+        if (empty($email['subject'])) {
+            $email['subject'] = $posts[0]->post_title;
+        }
+
         return $email;
     }
 
     function hook_user_subscribe($user) {
-        if ($this->options['subscription'] == 1 && isset($_REQUEST['feed'])) $user['feed'] = 1;
-        if ($this->options['subscription'] == 2) $user['feed'] = 1;
+        if ($this->options['subscription'] == 1 && isset($_REQUEST['feed']))
+            $user['feed'] = 1;
+        if ($this->options['subscription'] == 2)
+            $user['feed'] = 1;
         return $user;
     }
 
@@ -61,7 +73,8 @@ class NewsletterFeed extends NewsletterModule {
     }
 
     function get_posts($options = null) {
-        if ($options == null) $options = $this->options;
+        if ($options == null)
+            $options = $this->options;
 
         $excluded_categories = '';
         $categories = get_categories();
@@ -72,10 +85,12 @@ class NewsletterFeed extends NewsletterModule {
         }
 
         $max_posts = $options['max_posts'];
-        if (!is_numeric($max_posts)) $max_posts = 10;
+        if (!is_numeric($max_posts))
+            $max_posts = 10;
 
         $filters = array('showposts' => $max_posts, 'post_status' => 'publish');
-        if ($excluded_categories != '') $filters['cat'] = $excluded_categories;
+        if ($excluded_categories != '')
+            $filters['cat'] = $excluded_categories;
 
         $posts = get_posts($filters);
 
@@ -86,6 +101,7 @@ class NewsletterFeed extends NewsletterModule {
 
         return $posts;
     }
+
 }
 
 NewsletterFeed::instance();

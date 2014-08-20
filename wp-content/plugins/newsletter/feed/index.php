@@ -36,6 +36,7 @@ else {
         }
         else {
             $email = $module->create_email($controls->data);
+
             Newsletter::instance()->send($email, $users);
 
             $controls->messages = 'Test email sent to: ';
