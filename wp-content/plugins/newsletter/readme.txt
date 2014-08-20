@@ -1,7 +1,7 @@
 === Newsletter ===
 Tags: newsletter,email,subscription,mass mail,list build,email marketing,direct mailing
 Requires at least: 3.3.0
-Tested up to: 3.9.1
+Tested up to: 3.9.2
 Stable tag: trunk
 Donate link: http://www.satollo.net/donations
 
@@ -56,6 +56,16 @@ Thank you, Stefano Lissa (Satollo).
 No screen shots are available at this time.
 
 == Changelog ==
+
+= 3.6.3 =
+
+* fixed the feed by mail test function
+
+= 3.6.2 =
+
+* Added the separator selection on CSV export
+* Added the UTF-8 BOM to the export
+* Fixed some debug noticies
 
 = 3.6.1 =
 

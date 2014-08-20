@@ -511,11 +511,14 @@ class NewsletterSubscription extends NewsletterModule {
         } else if (isset($_REQUEST['ni'])) {
             $id = (int) $_REQUEST['ni'];
             $token = $_REQUEST['nt'];
+        } else {
+            return null;
         }
         $user = $newsletter->get_user($id);
 
-        if ($user == null || $token != $user->token)
+        if ($user == null || $token != $user->token) {
             return null;
+        }
         return $user;
     }
 
@@ -1054,7 +1057,7 @@ function newsletter_shortcode($attrs, $content) {
     $module = NewsletterSubscription::instance();
     $user = $module->get_user_from_request();
     $message_key = $module->get_message_key_from_request();
-    $alert = stripslashes($_REQUEST['alert']);
+    
 
     $message = $module->options[$message_key . '_text'];
 
@@ -1086,8 +1089,9 @@ function newsletter_shortcode($attrs, $content) {
 
     $message = $newsletter->replace($message, $user, null, 'page');
 
-    if (!empty($alert)) {
-        $message .= '<script>alert("' . addslashes(strip_tags($alert)) . '");</script>';
+    if (isset($_REQUEST['alert'])) {
+        // slashes are already added by wordpress!
+        $message .= '<script>alert("' . strip_tags($_REQUEST['alert']) . '");</script>';
     }
 
     return $message;

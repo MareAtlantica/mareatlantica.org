@@ -4,7 +4,7 @@
   Plugin Name: Newsletter
   Plugin URI: http://www.satollo.net/plugins/newsletter
   Description: Newsletter is a cool plugin to create your own subscriber list, to send newsletters, to build your business. <strong>Before update give a look to <a href="http://www.satollo.net/plugins/newsletter#update">this page</a> to know what's changed.</strong>
-  Version: 3.6.1
+  Version: 3.6.3
   Author: Stefano Lissa
   Author URI: http://www.satollo.net
   Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
@@ -12,8 +12,8 @@
   Copyright 2009-2014 Stefano Lissa (email: stefano@satollo.net, web: http://www.satollo.net)
  */
 
-// Useed as dummy parameter on css and js links
-define('NEWSLETTER_VERSION', '3.6.0');
+// Used as dummy parameter on css and js links
+define('NEWSLETTER_VERSION', '3.6.3');
 
 global $wpdb, $newsletter;
 

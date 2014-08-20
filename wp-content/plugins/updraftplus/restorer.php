@@ -867,6 +867,18 @@ class Updraft_Restorer extends WP_Upgrader {
 			case 'db':
 				do_action('updraftplus_restored_db', array('expected_oldsiteurl' => $this->old_siteurl, 'expected_oldhome' => $this->old_home, 'expected_oldcontent' => $this->old_content), $import_table_prefix);
 				$this->flush_rewrite_rules();
+
+				# N.B. flush_rewrite_rules() causes $wp_rewrite to become up to date again
+				if (function_exists('apache_get_modules')) {
+					global $wp_rewrite;
+					$mods = apache_get_modules();
+					if (($wp_rewrite->using_mod_rewrite_permalinks() && in_array('core', $mods) || in_array('http_core', $mods)) && !in_array('mod_rewrite', $mods)) {
+						$updraftplus->log("Using Apache, with permalinks (".get_option('permalink_structure').") but no mod_rewrite enabled");
+						$warn_no_rewrite = sprintf(__('You are using the %s webserver, but do not seem to have the %s module loaded.', 'updraftplus'), 'Apache', 'mod_rewrite').' '.sprintf(__('You should enable %s to make your pretty  permalinks (e.g. %s) work', 'updraftplus'), 'mod_rewrite', 'http://example.com/my-page/');
+						echo '<p><strong>'.htmlspecialchars($warn_no_rewrite).'</strong></p>';
+					}
+				}
+
 			break;
 			default:
 				$this->chmod_if_needed($wp_filesystem_dir, FS_CHMOD_DIR, false, $wp_filesystem);
@@ -1562,20 +1574,20 @@ class Updraft_Restorer extends WP_Upgrader {
 						echo __('OK', 'updraftplus');
 					}
 					echo '<br>';
+				}
 
-					// Now deal with the situation where the imported database sets a new over-ride upload_path that is absolute - which may not be wanted
-					$new_upload_path = $wpdb->get_row($wpdb->prepare("SELECT option_value FROM ${import_table_prefix}".$mprefix."options WHERE option_name = %s LIMIT 1", 'upload_path'));
-					$new_upload_path = (is_object($new_upload_path)) ? $new_upload_path->option_value : '';
-					// The danger situation is absolute and points somewhere that is now perhaps not accessible at all
-					if (!empty($new_upload_path) && $new_upload_path != $this->prior_upload_path && strpos($new_upload_path, '/') === 0) {
-						if (!file_exists($new_upload_path)) {
-							$updraftplus->log_e("Uploads path (%s) does not exist - resetting (%s)", $new_upload_path, $this->prior_upload_path);
-							if (false === $wpdb->query("UPDATE ${import_table_prefix}".$mprefix."options SET option_value='".esc_sql($this->prior_upload_path)."' WHERE option_name='upload_path' LIMIT 1")) {
-								echo __('Error','updraftplus');
-								$updraftplus->log("Failed");
-							}
-							#update_option('upload_path', $this->prior_upload_path);
+				// Now deal with the situation where the imported database sets a new over-ride upload_path that is absolute - which may not be wanted
+				$new_upload_path = $wpdb->get_row($wpdb->prepare("SELECT option_value FROM ${import_table_prefix}".$mprefix."options WHERE option_name = %s LIMIT 1", 'upload_path'));
+				$new_upload_path = (is_object($new_upload_path)) ? $new_upload_path->option_value : '';
+				// The danger situation is absolute and points somewhere that is now perhaps not accessible at all
+				if (!empty($new_upload_path) && $new_upload_path != $this->prior_upload_path && (strpos($new_upload_path, '/') === 0) || preg_match('#^[A-Za-z]:[/\\\]#', $new_upload_path)) {
+					if (!file_exists($new_upload_path)) {
+						$updraftplus->log_e("Uploads path (%s) does not exist - resetting (%s)", $new_upload_path, $this->prior_upload_path);
+						if (false === $wpdb->query("UPDATE ${import_table_prefix}".$mprefix."options SET option_value='".esc_sql($this->prior_upload_path)."' WHERE option_name='upload_path' LIMIT 1")) {
+							echo __('Error','updraftplus');
+							$updraftplus->log("Failed");
 						}
+						#update_option('upload_path', $this->prior_upload_path);
 					}
 				}
 
@@ -1604,8 +1616,7 @@ class Updraft_Restorer extends WP_Upgrader {
 				}
 			}
 
-// 		} elseif (preg_match('/^([\d+]_)?usermeta/', substr($table, strlen($import_table_prefix)), $matches)) {
-		} elseif ($table == $import_table_prefix.'usermeta') {
+		} elseif ($import_table_prefix != $old_table_prefix && preg_match('/^([\d+]_)?usermeta$/', substr($table, strlen($import_table_prefix)), $matches)) {
 
 			# This table is not a per-site table, but per-install
 

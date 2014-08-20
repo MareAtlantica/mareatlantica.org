@@ -32,13 +32,24 @@ for ($i = 1; $i <= NEWSLETTER_LIST_MAX; $i++) {
     <form method="post" action="<?php echo plugins_url('newsletter'); ?>/users/csv.php">
         <?php $controls->init(); ?>
         <table class="form-table">
+             <tr>
+                 <th>Fields separator</th>
+                 <td>
+                    <?php $controls->select('separator', array(';' => 'Semicolon', ',' => 'Comma', 'tab' => 'Tabulation')); ?>
+                     <p class="description">Try to change the separator if Excel does not recognize the columns.</p>
+                 </td>
+             </tr>
             <tr>
+                <th>Limit to</th>
                 <td>
                     <?php $controls->select('list', $lists); ?>
-                    <?php $controls->button('export', 'Export'); ?>
+                    <p class="description">Limit to the user with that preference active</p>
                 </td>
             </tr>
         </table>
+        <p>
+            <?php $controls->button('export', 'Export'); ?>
+        </p>
     </form>
 
 </div>
