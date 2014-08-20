@@ -37,8 +37,7 @@
 			if ( is_admin_bar_showing() ) echo '<div style="padding-top: 28px; min-height: 28px;"></div>'; 
 		?>
          <!-- Mobile display -->
-         <div class="container">
-            <div class="navbar-header">
+         <div class="navbar-header">
 	       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 		   <span class="sr-only">Toggle navigation</span>
 		   <span class="icon-bar"></span>
@@ -58,7 +57,6 @@
 	        'walker'          => new wp_bootstrap_navwalker()
 	      ) );
 	   ?>
-       </div>
        </nav> 
 		
 		<?php do_action( '__before_header' ); ?>
