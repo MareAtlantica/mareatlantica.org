@@ -225,3 +225,235 @@
 1006.788 (2) There were errors in the uploads, so the 'resume' event is remaining scheduled
 1006.789 (2) No email will/can be sent - the user has not configured an email address.
 1006.790 (2) The backup has not finished; a resumption is scheduled
+1838.995 (3) Opened log file at time: Wed, 20 Aug 2014 10:25:28 +0000 on http://localhost:8080/mareatlantica
+1838.996 (3) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 7.2M | 7.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1838.997 (3) Free space on disk containing Updraft's temporary directory: 207035.8 Mb
+1838.999 (3) Backup run: resumption=3, nonce=d023d77b6e5c, begun at=1408528489 (1839s ago), job type=backup, previous check-in=0.4s
+1839.000 (3) Scheduling a resumption (4) after 300 seconds (1408530628) in case this run gets aborted
+1839.002 (3) Checking if we have a zip executable available
+1839.003 (3) Zip engine: found/will use a binary zip: /usr/bin/zip
+1839.004 (3) Creation of backups of directories: already finished
+1839.004 (3) Saving backup status to database (elements: 8)
+1839.006 (3) No database backup (wp) - not part of this run
+1839.007 (3) Saving backup history
+1839.009 (3) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+1839.010 (3) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: themes: This file has already been successfully uploaded
+1839.011 (3) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: uploads: This file has already been successfully uploaded
+1839.012 (3) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: others: This file has already been successfully uploaded
+1839.014 (3) Requesting upload of the files that have not yet been successfully uploaded (1)
+1839.016 (3) Cloud backup selection: email
+1839.016 (3) Beginning dispatch of backup to remote (email)
+1839.017 (3) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: email to: dalar...
+1839.353 (3) Mails were not sent successfully
+1839.354 (3) An error condition has occurred for the first time during this job
+1839.356 (3) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+1839.357 (3) Number of backup sets in history: 4
+1839.358 (3) Examining backup set with datestamp: 1408528498 (Aug 20 2014 09:54:58)
+1839.358 (3) 1408528498: db: this set includes a database (backup_2014-08-20-1154_MAREA_ATLNTICA_887bf6eef5b6-db.gz); db count is now 1
+1839.360 (3) 1408528498: this backup set remains non-empty (0/1); will retain in history
+1839.361 (3) Examining backup set with datestamp: 1408528489 (Aug 20 2014 09:54:49)
+1839.362 (3) 1408528489: this backup set remains non-empty (1/0); will retain in history
+1839.363 (3) Examining backup set with datestamp: 1408524691 (Aug 20 2014 08:51:31)
+1839.364 (3) 1408524691: db: this set includes a database (backup_2014-08-20-1051_MAREA_ATLNTICA_6d1e0da70a30-db.gz); db count is now 2
+1839.365 (3) 1408524691: this backup set remains non-empty (0/1); will retain in history
+1839.366 (3) Examining backup set with datestamp: 1407318421 (Aug 06 2014 09:47:01)
+1839.367 (3) 1407318421: this backup set remains non-empty (1/0); will retain in history
+1839.368 (3) Retain: saving new backup history (sets now: 4) and finishing retain operation
+1839.368 (3) Resume backup (d023d77b6e5c, 3): finish run
+1839.370 (3) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1839.371 (3) No email will/can be sent - the user has not configured an email address.
+1839.372 (3) The backup has not finished; a resumption is scheduled
+2140.615 (4) Opened log file at time: Wed, 20 Aug 2014 10:30:30 +0000 on http://localhost:8080/mareatlantica
+2140.617 (4) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 7.2M | 7.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+2140.624 (4) Free space on disk containing Updraft's temporary directory: 207028.5 Mb
+2140.627 (4) Backup run: resumption=4, nonce=d023d77b6e5c, begun at=1408528489 (2141s ago), job type=backup, previous check-in=0.4s
+2140.631 (4) Scheduling a resumption (5) after 300 seconds (1408530930) in case this run gets aborted
+2140.641 (4) Checking if we have a zip executable available
+2140.646 (4) Zip engine: found/will use a binary zip: /usr/bin/zip
+2140.647 (4) Creation of backups of directories: already finished
+2140.648 (4) Saving backup status to database (elements: 8)
+2140.650 (4) No database backup (wp) - not part of this run
+2140.651 (4) Saving backup history
+2140.653 (4) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+2140.655 (4) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: themes: This file has already been successfully uploaded
+2140.655 (4) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: uploads: This file has already been successfully uploaded
+2140.656 (4) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: others: This file has already been successfully uploaded
+2140.658 (4) Requesting upload of the files that have not yet been successfully uploaded (1)
+2140.660 (4) Cloud backup selection: email
+2140.661 (4) Beginning dispatch of backup to remote (email)
+2140.662 (4) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: email to: dalar...
+2141.044 (4) Mails were not sent successfully
+2141.045 (4) An error condition has occurred for the first time during this job
+2141.047 (4) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+2141.048 (4) Number of backup sets in history: 4
+2141.049 (4) Examining backup set with datestamp: 1408528498 (Aug 20 2014 09:54:58)
+2141.050 (4) 1408528498: db: this set includes a database (backup_2014-08-20-1154_MAREA_ATLNTICA_887bf6eef5b6-db.gz); db count is now 1
+2141.051 (4) 1408528498: this backup set remains non-empty (0/1); will retain in history
+2141.052 (4) Examining backup set with datestamp: 1408528489 (Aug 20 2014 09:54:49)
+2141.053 (4) 1408528489: this backup set remains non-empty (1/0); will retain in history
+2141.054 (4) Examining backup set with datestamp: 1408524691 (Aug 20 2014 08:51:31)
+2141.055 (4) 1408524691: db: this set includes a database (backup_2014-08-20-1051_MAREA_ATLNTICA_6d1e0da70a30-db.gz); db count is now 2
+2141.057 (4) 1408524691: this backup set remains non-empty (0/1); will retain in history
+2141.057 (4) Examining backup set with datestamp: 1407318421 (Aug 06 2014 09:47:01)
+2141.059 (4) 1407318421: this backup set remains non-empty (1/0); will retain in history
+2141.059 (4) Retain: saving new backup history (sets now: 4) and finishing retain operation
+2141.060 (4) Resume backup (d023d77b6e5c, 4): finish run
+2141.061 (4) There were errors in the uploads, so the 'resume' event is remaining scheduled
+2141.063 (4) No email will/can be sent - the user has not configured an email address.
+2141.063 (4) The backup has not finished; a resumption is scheduled
+2697.579 (5) Opened log file at time: Wed, 20 Aug 2014 10:39:47 +0000 on http://localhost:8080/mareatlantica
+2697.583 (5) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 9.5M | 10M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+2697.585 (5) Free space on disk containing Updraft's temporary directory: 207028 Mb
+2697.586 (5) Backup run: resumption=5, nonce=d023d77b6e5c, begun at=1408528489 (2698s ago), job type=backup, previous check-in=0.4s
+2697.588 (5) Scheduling a resumption (6) after 300 seconds (1408531487) in case this run gets aborted
+2697.592 (5) Checking if we have a zip executable available
+2697.594 (5) Zip engine: found/will use a binary zip: /usr/bin/zip
+2697.596 (5) Creation of backups of directories: already finished
+2697.598 (5) Saving backup status to database (elements: 8)
+2697.600 (5) No database backup (wp) - not part of this run
+2697.603 (5) Saving backup history
+2697.608 (5) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+2697.609 (5) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: themes: This file has already been successfully uploaded
+2697.610 (5) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: uploads: This file has already been successfully uploaded
+2697.610 (5) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: others: This file has already been successfully uploaded
+2697.612 (5) Requesting upload of the files that have not yet been successfully uploaded (1)
+2697.613 (5) Cloud backup selection: email
+2697.614 (5) Beginning dispatch of backup to remote (email)
+2697.615 (5) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: email to: dalar...
+2698.058 (5) Mails were not sent successfully
+2698.060 (5) An error condition has occurred for the first time during this job
+2698.063 (5) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+2698.065 (5) Number of backup sets in history: 4
+2698.067 (5) Examining backup set with datestamp: 1408528498 (Aug 20 2014 09:54:58)
+2698.068 (5) 1408528498: db: this set includes a database (backup_2014-08-20-1154_MAREA_ATLNTICA_887bf6eef5b6-db.gz); db count is now 1
+2698.070 (5) 1408528498: this backup set remains non-empty (0/1); will retain in history
+2698.072 (5) Examining backup set with datestamp: 1408528489 (Aug 20 2014 09:54:49)
+2698.075 (5) 1408528489: this backup set remains non-empty (1/0); will retain in history
+2698.076 (5) Examining backup set with datestamp: 1408524691 (Aug 20 2014 08:51:31)
+2698.077 (5) 1408524691: db: this set includes a database (backup_2014-08-20-1051_MAREA_ATLNTICA_6d1e0da70a30-db.gz); db count is now 2
+2698.079 (5) 1408524691: this backup set remains non-empty (0/1); will retain in history
+2698.080 (5) Examining backup set with datestamp: 1407318421 (Aug 06 2014 09:47:01)
+2698.082 (5) 1407318421: this backup set remains non-empty (1/0); will retain in history
+2698.083 (5) Retain: saving new backup history (sets now: 4) and finishing retain operation
+2698.085 (5) Resume backup (d023d77b6e5c, 5): finish run
+2698.087 (5) There were errors in the uploads, so the 'resume' event is remaining scheduled
+2698.090 (5) No email will/can be sent - the user has not configured an email address.
+2698.091 (5) The backup has not finished; a resumption is scheduled
+4831.366 (6) Opened log file at time: Wed, 20 Aug 2014 11:15:20 +0000 on http://localhost:8080/mareatlantica
+4831.370 (6) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 7.1M | 7.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+4831.371 (6) Free space on disk containing Updraft's temporary directory: 207033.7 Mb
+4831.373 (6) Backup run: resumption=6, nonce=d023d77b6e5c, begun at=1408528489 (4831s ago), job type=backup, previous check-in=0.5s
+4831.375 (6) Long time past since expected resumption time: approx expected=1408531487.7, now=1408533321, diff=1833.3
+4831.381 (6) [Warning] Your website is visited infrequently and UpdraftPlus is not getting the resources it hoped for; please read this page: http://updraftplus.com/faqs/why-am-i-getting-warnings-about-my-site-not-having-enough-visitors/
+4831.384 (6) Scheduling a resumption (7) after 300 seconds (1408533620) in case this run gets aborted
+4831.386 (6) Checking if we have a zip executable available
+4831.387 (6) Zip engine: found/will use a binary zip: /usr/bin/zip
+4831.388 (6) Creation of backups of directories: already finished
+4831.389 (6) Saving backup status to database (elements: 8)
+4831.393 (6) No database backup (wp) - not part of this run
+4831.393 (6) Saving backup history
+4831.395 (6) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+4831.396 (6) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: themes: This file has already been successfully uploaded
+4831.397 (6) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: uploads: This file has already been successfully uploaded
+4831.398 (6) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: others: This file has already been successfully uploaded
+4831.401 (6) Requesting upload of the files that have not yet been successfully uploaded (1)
+4831.403 (6) Cloud backup selection: email
+4831.404 (6) Beginning dispatch of backup to remote (email)
+4831.405 (6) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: email to: dalar...
+4831.675 (6) Mails were not sent successfully
+4831.676 (6) An error condition has occurred for the first time during this job
+4831.678 (6) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+4831.680 (6) Number of backup sets in history: 4
+4831.682 (6) Examining backup set with datestamp: 1408528498 (Aug 20 2014 09:54:58)
+4831.683 (6) 1408528498: db: this set includes a database (backup_2014-08-20-1154_MAREA_ATLNTICA_887bf6eef5b6-db.gz); db count is now 1
+4831.685 (6) 1408528498: this backup set remains non-empty (0/1); will retain in history
+4831.686 (6) Examining backup set with datestamp: 1408528489 (Aug 20 2014 09:54:49)
+4831.688 (6) 1408528489: this backup set remains non-empty (1/0); will retain in history
+4831.689 (6) Examining backup set with datestamp: 1408524691 (Aug 20 2014 08:51:31)
+4831.690 (6) 1408524691: db: this set includes a database (backup_2014-08-20-1051_MAREA_ATLNTICA_6d1e0da70a30-db.gz); db count is now 2
+4831.692 (6) 1408524691: this backup set remains non-empty (0/1); will retain in history
+4831.693 (6) Examining backup set with datestamp: 1407318421 (Aug 06 2014 09:47:01)
+4831.695 (6) 1407318421: this backup set remains non-empty (1/0); will retain in history
+4831.696 (6) Retain: saving new backup history (sets now: 4) and finishing retain operation
+4831.698 (6) Resume backup (d023d77b6e5c, 6): finish run
+4831.700 (6) There were errors in the uploads, so the 'resume' event is remaining scheduled
+4831.702 (6) No email will/can be sent - the user has not configured an email address.
+4831.703 (6) The backup has not finished; a resumption is scheduled
+5133.442 (7) Opened log file at time: Wed, 20 Aug 2014 11:20:23 +0000 on http://localhost:8080/mareatlantica
+5133.443 (7) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 7.1M | 7.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+5133.444 (7) Free space on disk containing Updraft's temporary directory: 207029 Mb
+5133.447 (7) Backup run: resumption=7, nonce=d023d77b6e5c, begun at=1408528489 (5134s ago), job type=backup, previous check-in=0.3s
+5133.449 (7) Scheduling a resumption (8) after 300 seconds (1408533923) in case this run gets aborted
+5133.451 (7) Checking if we have a zip executable available
+5133.452 (7) Zip engine: found/will use a binary zip: /usr/bin/zip
+5133.453 (7) Creation of backups of directories: already finished
+5133.454 (7) Saving backup status to database (elements: 8)
+5133.457 (7) No database backup (wp) - not part of this run
+5133.457 (7) Saving backup history
+5133.460 (7) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+5133.461 (7) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: themes: This file has already been successfully uploaded
+5133.462 (7) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: uploads: This file has already been successfully uploaded
+5133.462 (7) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: others: This file has already been successfully uploaded
+5133.465 (7) Requesting upload of the files that have not yet been successfully uploaded (1)
+5133.467 (7) Cloud backup selection: email
+5133.468 (7) Beginning dispatch of backup to remote (email)
+5133.469 (7) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: email to: dalar...
+5133.872 (7) Mails were not sent successfully
+5133.873 (7) An error condition has occurred for the first time during this job
+5133.874 (7) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+5133.875 (7) Number of backup sets in history: 4
+5133.877 (7) Examining backup set with datestamp: 1408528498 (Aug 20 2014 09:54:58)
+5133.879 (7) 1408528498: db: this set includes a database (backup_2014-08-20-1154_MAREA_ATLNTICA_887bf6eef5b6-db.gz); db count is now 1
+5133.882 (7) 1408528498: this backup set remains non-empty (0/1); will retain in history
+5133.886 (7) Examining backup set with datestamp: 1408528489 (Aug 20 2014 09:54:49)
+5133.889 (7) 1408528489: this backup set remains non-empty (1/0); will retain in history
+5133.890 (7) Examining backup set with datestamp: 1408524691 (Aug 20 2014 08:51:31)
+5133.890 (7) 1408524691: db: this set includes a database (backup_2014-08-20-1051_MAREA_ATLNTICA_6d1e0da70a30-db.gz); db count is now 2
+5133.892 (7) 1408524691: this backup set remains non-empty (0/1); will retain in history
+5133.893 (7) Examining backup set with datestamp: 1407318421 (Aug 06 2014 09:47:01)
+5133.897 (7) 1407318421: this backup set remains non-empty (1/0); will retain in history
+5133.897 (7) Retain: saving new backup history (sets now: 4) and finishing retain operation
+5133.898 (7) Resume backup (d023d77b6e5c, 7): finish run
+5133.900 (7) There were errors in the uploads, so the 'resume' event is remaining scheduled
+5133.902 (7) No email will/can be sent - the user has not configured an email address.
+5133.903 (7) The backup has not finished; a resumption is scheduled
+5946.475 (8) Opened log file at time: Wed, 20 Aug 2014 11:33:56 +0000 on http://localhost:8080/mareatlantica
+5946.476 (8) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.17 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-34-lowlatency #60-Ubuntu SMP PREEMPT Wed Aug 13 16:15:18 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 7.2M | 7.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+5946.477 (8) Free space on disk containing Updraft's temporary directory: 207015.4 Mb
+5946.480 (8) Backup run: resumption=8, nonce=d023d77b6e5c, begun at=1408528489 (5947s ago), job type=backup, previous check-in=0.5s
+5946.482 (8) Time passed on previous resumptions: 0:8.7 1:0.4 2:0.4 3:0.4 4:0.4 5:0.5 6:0.3 7:0.5  (known: 8, max: 9)
+5946.482 (8) Based on the available data, we are bringing the resumption interval down to: 61 seconds
+5946.484 (8) Scheduling a resumption (9) after 61 seconds (1408534497) in case this run gets aborted
+5946.493 (8) Checking if we have a zip executable available
+5946.493 (8) Zip engine: found/will use a binary zip: /usr/bin/zip
+5946.495 (8) Creation of backups of directories: already finished
+5946.497 (8) Saving backup status to database (elements: 8)
+5946.503 (8) No database backup (wp) - not part of this run
+5946.505 (8) Saving backup history
+5946.508 (8) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+5946.510 (8) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-themes.zip: themes: This file has already been successfully uploaded
+5946.512 (8) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-uploads.zip: uploads: This file has already been successfully uploaded
+5946.513 (8) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-others.zip: others: This file has already been successfully uploaded
+5946.516 (8) Requesting upload of the files that have not yet been successfully uploaded (1)
+5946.523 (8) Cloud backup selection: email
+5946.524 (8) Beginning dispatch of backup to remote (email)
+5946.526 (8) backup_2014-08-20-1154_MAREA_ATLNTICA_d023d77b6e5c-plugins.zip: email to: dalar...
+5946.945 (8) Mails were not sent successfully
+5946.946 (8) An error condition has occurred for the first time during this job
+5946.947 (8) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+5946.948 (8) Number of backup sets in history: 4
+5946.949 (8) Examining backup set with datestamp: 1408528498 (Aug 20 2014 09:54:58)
+5946.950 (8) 1408528498: db: this set includes a database (backup_2014-08-20-1154_MAREA_ATLNTICA_887bf6eef5b6-db.gz); db count is now 1
+5946.952 (8) 1408528498: this backup set remains non-empty (0/1); will retain in history
+5946.956 (8) Examining backup set with datestamp: 1408528489 (Aug 20 2014 09:54:49)
+5946.958 (8) 1408528489: this backup set remains non-empty (1/0); will retain in history
+5946.959 (8) Examining backup set with datestamp: 1408524691 (Aug 20 2014 08:51:31)
+5946.959 (8) 1408524691: db: this set includes a database (backup_2014-08-20-1051_MAREA_ATLNTICA_6d1e0da70a30-db.gz); db count is now 2
+5946.961 (8) 1408524691: this backup set remains non-empty (0/1); will retain in history
+5946.962 (8) Examining backup set with datestamp: 1407318421 (Aug 06 2014 09:47:01)
+5946.963 (8) 1407318421: this backup set remains non-empty (1/0); will retain in history
+5946.964 (8) Retain: saving new backup history (sets now: 4) and finishing retain operation
+5946.965 (8) Resume backup (d023d77b6e5c, 8): finish run
+5946.967 (8) There were errors in the uploads, so the 'resume' event is remaining scheduled
+5946.968 (8) No email will/can be sent - the user has not configured an email address.
+5946.971 (8) The backup has not finished; a resumption is scheduled

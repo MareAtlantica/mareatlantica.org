@@ -25,6 +25,4 @@ function wp_bootstrap_scripts_styles() {
 add_action('wp_enqueue_scripts', 'wp_bootstrap_scripts_styles');
 
   // Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php');
-  //Fire Customizr
-require_once( get_template_directory() . '/inc/init.php' ); ?>
+require_once('wp_bootstrap_navwalker.php'); ?>
