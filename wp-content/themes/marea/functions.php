@@ -18,7 +18,7 @@ function wp_bootstrap_scripts_styles() {
   // Loads Bootstrap minified CSS file.
   wp_enqueue_style('bootstrapwp', get_template_directory_uri() . '/../marea/css/bootstrap.min.css', array( ), '3.0.0', false );
   // Loads holder.js.
-  wp_enqueue_script('holder', get_template_directory_uri() . '/../marea/js/holder.js', array ('jquery'), null, true );
+//  wp_enqueue_script('holder', get_template_directory_uri() . '/../marea/js/holder.js', array ('jquery'), null, true );
 }
 add_action('wp_enqueue_scripts', 'wp_bootstrap_scripts_styles');
 

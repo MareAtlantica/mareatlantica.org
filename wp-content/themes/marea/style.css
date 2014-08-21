@@ -63,3 +63,7 @@ h1,h2,h3,h4,h5 {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .current-menu-ancestor, .current-menu-parent {
     background-color:#59D1FF;
     color: #555;}*/
+.collapse {
+	position:initial;
+}
+
