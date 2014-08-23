@@ -144,11 +144,11 @@ if ( ! class_exists( 'TC_footer_main' ) ) :
 	    		'tc_credits_display',
 	    		sprintf('<div class="%1$s">%2$s</div>',
 		    		apply_filters( 'tc_colophon_center_block_class', 'span4 credits' ),
-		    		sprintf( '<p> &middot; &copy; %1$s <a href="%2$s" title="%3$s" rel="bookmark">%3$s</a> &middot; Designed by %4$s &middot;</p>',
+		    		sprintf( '<p> &middot; %1$s <a href="%2$s" title="%3$s" rel="bookmark">%3$s</a> &middot; Deseñado por %4$s &middot;</p>',
 						    esc_attr( date( 'Y' ) ),
 						    esc_url( home_url() ),
 						    esc_attr(get_bloginfo()),
-						    '<a href="'.TC_WEBSITE.'">Themes &amp; Co</a>'
+						    '<a href="'.TC_WEBSITE.'">mareatlantica.org</a>'
 					)
 	    		)
 	    	);
@@ -167,7 +167,7 @@ if ( ! class_exists( 'TC_footer_main' ) ) :
 	    		'tc_colophon_right_block',
 	    		sprintf('<div class="%1$s"><p class="pull-right"><a class="back-to-top" href="#">%2$s</a></p></div>',
 	    			apply_filters( 'tc_colophon_right_block_class', 'span4 backtop' ),
-	    			__( 'Back to top' , 'customizr' )
+	    			__( 'Volta ao inicio' , 'customizr' )
 	    		)
 	    	);
 		}
