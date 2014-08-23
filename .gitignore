@@ -4,8 +4,5 @@ wp-config.php
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
-<<<<<<< HEAD
-wp-content/logs/
-=======
 wp-content/logs/newsletter/
->>>>>>> develop
+
