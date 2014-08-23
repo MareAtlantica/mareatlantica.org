@@ -4,3 +4,4 @@ wp-config.php
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
+wp-content/logs/
