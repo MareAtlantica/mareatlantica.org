@@ -4,5 +4,6 @@ wp-config.php
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
+wp-content/updraft/
 wp-content/logs/newsletter/
 
