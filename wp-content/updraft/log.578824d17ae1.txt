@@ -1,0 +1,51 @@
+0000.003 () Opened log file at time: Fri, 22 Aug 2014 23:15:05 +0000 on http://localhost:8080/mareatlantica
+0000.004 () UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.19 WP: 3.9.2 PHP: 5.5.9-1ubuntu4.3 (Linux Ubuntu-Desktop 3.13.0-35-lowlatency #62-Ubuntu SMP PREEMPT Fri Aug 15 02:26:48 UTC 2014 x86_64) MySQL:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 11.4M | 12M) multisite: N mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 206531.5 Mb
+0000.004 () Restore job started. Entities to restore: db
+0000.012 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.012 () Entity: db
+0000.012 () restore_backup(backup_file=backup_2014-08-23-0113_MAREA_ATLNTICA_a55b07e3b309-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.012 () Unpacking backup...
+0000.015 () Database successfully unpacked
+0000.015 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.015 () Using direct MySQL access; value of use_mysqli is: 1
+0000.016 () Tried to raise max_allowed_packet from 16 Mb to 32 Mb, but failed (Access denied; you need (at least one of) the SUPER privilege(s) for this operation, b:0;)
+0000.016 () Max packet size: 16 Mb
+0000.017 () Backup created by: 1.9.17
+0000.018 () <strong>Backup of:</strong> http://mareatlantica.org
+0000.019 () Content URL: http://mareatlantica.org/wp-content
+0000.019 () Old table prefix: wp_
+0000.019 () Site information: multisite=0
+0000.025 () New table prefix: wp_
+0000.028 () Restoring table (MyISAM): wp_options
+0000.238 () Restoring table (MyISAM): wp_users
+0000.282 () Restoring table (MyISAM): wp_usermeta
+0000.366 () Restoring table (MyISAM): wp_commentmeta
+0000.498 () Restoring table (MyISAM): wp_comments
+0000.572 () Restoring table (MyISAM): wp_links
+0000.616 () Restoring table (MyISAM): wp_postmeta
+0000.741 () Restoring table (MyISAM): wp_posts
+0000.966 () Restoring table (MyISAM): wp_signups
+0000.999 () Restoring table (MyISAM): wp_term_relationships
+0001.077 () Restoring table (MyISAM): wp_term_taxonomy
+0001.116 () Restoring table (MyISAM): wp_terms
+0001.164 () Restoring table (MyISAM): wp_bp_activity
+0001.218 () Restoring table (MyISAM): wp_bp_activity_meta
+0001.283 () Database queries processed: 50 in 1.27 seconds
+0001.290 () Restoring table (MyISAM): wp_bp_groups
+0001.324 () Restoring table (MyISAM): wp_bp_groups_groupmeta
+0001.369 () Restoring table (MyISAM): wp_bp_groups_members
+0001.410 () Restoring table (MyISAM): wp_bp_notifications
+0001.453 () Restoring table (MyISAM): wp_bp_xprofile_data
+0001.498 () Restoring table (MyISAM): wp_bp_xprofile_fields
+0001.549 () Restoring table (MyISAM): wp_bp_xprofile_groups
+0001.610 () Restoring table (MyISAM): wp_bp_xprofile_meta
+0001.678 () Restoring table (MyISAM): wp_cf7dbplugin_submits
+0007.113 () Restoring table (MyISAM): wp_newsletter
+0007.586 () Restoring table (MyISAM): wp_newsletter_emails
+0007.754 () Restoring table (MyISAM): wp_newsletter_stats
+0008.368 () Database queries processed: 100 in 8.35 seconds
+0008.756 () Finished: lines processed: 105 in 8.74 seconds
+0008.756 () Cleaning up rubbish...
+0008.759 () Restore successful!
+0008.759 () Restore successful

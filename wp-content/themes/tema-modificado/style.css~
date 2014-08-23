@@ -1,0 +1,259 @@
+<<<<<<< HEAD
+/*
+Theme Name: Tema modificado
+Theme URI: 
+Author:
+Author URI:
+Description: HTML5 Blank theme with Twitter Bootstrap Framework
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: tema-modificado
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('fonts/stylesheet.css');
+
+
+body {
+	color: #333;
+}
+
+a {
+        color: #00aeef;
+}
+
+a:hover {
+        color: #00aeef;
+}
+
+nav a {
+	color: #888;}
+	
+h1,h2,h3,h4,h5 {
+	margin: 40px 0 25px;
+	font-family: "BebasNeue", sans-serif;
+	color: #00aeef;
+	}
+	
+strong {
+	color: ;
+	}
+
+.wp-image-33 {
+	 padding-bottom: 50px;
+}
+
+.page {
+        padding-top: 50px;}
+
+.single {
+        padding-top: 50px;}
+
+.blog {
+        padding-top: 50px;}
+
+.sinaturas {
+	padding-top: 50px;}
+
+.navbar-brand {
+	font-family: "BebasNeue", sans-serif;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .current-menu-ancestor, .current-menu-parent {
+    background-color:#59D1FF;
+    color: #555;}
+    
+.front-page-header {
+	margin-bottom: 100px;
+}
+
+.jumbotron h1{
+	color: #00AEEF}
+.jumbotron .btn {
+	border-color: #00aeef;
+	background-color: #00aeef;}
+.jumbotron .btn:hover {
+	background-color: #2BC2FC;}
+
+
+#asina {
+        color: #000000;
+}
+
+.well > a {
+        color: #00AEEF;
+}
+
+.btn.asina {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	border-color: #00aeef;
+	background-color: #00aeef;}
+
+	
+.btn.asina:hover{
+	background-color: #2BC2FC;}
+
+@media (min-width: 1200px) {
+		
+=======
+/*
+Theme Name: Tema modificado
+Theme URI: 
+Author:
+Author URI:
+Description: HTML5 Blank theme with Twitter Bootstrap Framework
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: tema-modificado
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('fonts/stylesheet.css');
+
+
+body {
+	color: #333;
+}
+
+a {
+        color: #00aeef;
+}
+
+a:hover {
+        color: #00aeef;
+}
+
+nav a {
+	color: #888;}
+	
+h1,h2,h3,h4,h5 {
+	margin: 40px 0 25px;
+	font-family: "BebasNeue", sans-serif;
+	color: #00aeef;
+	}
+	
+strong {
+	color: ;
+	}
+
+.wp-image-33 {
+	 padding-bottom: 50px;
+}
+
+.page {
+        padding-top: 50px;}
+
+.single {
+        padding-top: 50px;}
+
+.blog {
+        padding-top: 50px;}
+
+.sinaturas {
+	padding-top: 50px;}
+
+.navbar-brand {
+	font-family: "BebasNeue", sans-serif;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .current-menu-ancestor, .current-menu-parent {
+    background-color:#59D1FF;
+    color: #555;}
+    
+.front-page-header {
+
+}
+.jumbotron {
+    background: url(img/fondo_header.jpg) no-repeat top center #eee;
+    background-size:auto 100%;}
+.jumbotron h1{
+	color: #00AEEF}
+.jumbotron .btn {
+	border-color: #00aeef;
+	background-color: #00aeef;}
+.jumbotron .btn:hover {
+	background-color: #2BC2FC;}
+
+
+#asina {
+        color: #000000;
+}
+
+.well > a {
+        color: #00AEEF;
+}
+
+.btn.asina {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	border-color: #00aeef;
+	background-color: #00aeef;}
+
+	
+.btn.asina:hover{
+	background-color: #2BC2FC;}
+
+.novas{
+		background: #EEE;
+}
+.novas ul{
+	padding: 0;}
+	
+.novas li{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 15px 0 20px;
+	list-style: none;
+	border-bottom: 1px solid #FFF;
+}
+
+.novas h3{
+	margin: 10px 0 5px;;
+	font-size: 24px;}
+.novas p{
+	font-size: 14px;
+}
+
+.novas .more{
+	text-align: right;
+	font-size: 12px;
+	}
+
+/* 
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/ 
+*/
+
+/* 
+This element holds injected scripts inside iframes that in 
+some cases may stretch layouts. So, we're just hiding it. 
+*/
+
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}
+
+
+.fb-like-box {
+	border-radius: 5px;
+	border: 1px solid #e8e8e8;
+	    }
+@media (min-width: 1200px) {
+		
+>>>>>>> 9ee36897f3d0a24a968a25a03bdea65f3b03f84b
+}
