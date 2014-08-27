@@ -6,7 +6,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires at least: 3.2.1
 Tested up to: 3.9.1
-Stable tag: 2.8.7
+Stable tag: 2.8.8
 
 Saves submitted form data to the database and allow you to export the data to a file and use short codes to display it.
 
@@ -82,6 +82,11 @@ You can always deactivate the plugin without loosing data.
 1. Admin Panel view of submitted form data
 
 == Changelog ==
+
+= 2.8.9 =
+* Added delete button in admin screen viewing single submission
+* Can now include in CF7 emails the CFDB [submit_time] and [submit_url]
+* Fixes to handling line breaks in [cfdb-json]
 
 = 2.8.8 =
 * PHP fix: work-around for bug in PHP 5.3.0 - 5.3.8 https://bugs.php.net/bug.php?id=43200
