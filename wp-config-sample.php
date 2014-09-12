@@ -61,15 +61,7 @@ define('NONCE_SALT',       'pon a túa frase única aquí');
  */
 $table_prefix  = 'wp_';
 
-/**
- * Idioma de localización do WordPress, Galego por omisión.
- *
- * Cambia isto para localizar o WordPress. Un ficheiro MO correspondendo ao idioma
- * escollido deberá existir no cartafol wp-content/languages. Instala por exemplo
- * fr_FR.mo en wp-content/languages e define WPLANG como 'fr_FR' para activar o
- * soporte para a lingua francesa.
- */
-define ('WPLANG', 'gl_ES');
+
 
 /**
  * Para desenvolvedores: WordPress en modo debugging.

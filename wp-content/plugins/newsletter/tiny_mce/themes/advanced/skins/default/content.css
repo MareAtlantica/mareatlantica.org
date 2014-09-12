@@ -1,9 +1,9 @@
-body, td, pre {color:#000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; margin:8px;}
+body, td, pre {color:#000; font-family:'BebasNeue'Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:10px; margin:8px;}
 body {background:#FFF;}
 body.mceForceColors {background:#FFF; color:#000;}
 body.mceBrowserDefaults {background:transparent; color:inherit; font-size:inherit; font-family:inherit;}
 h1 {font-size: 2em}
-h2 {font-size: 1.5em}
+h2 {font-size: 1.4em; color: #00AEEF;}
 h3 {font-size: 1.17em}
 h4 {font-size: 1em}
 h5 {font-size: .83em}
